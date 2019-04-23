@@ -13,31 +13,29 @@
 |**JavaScript**                    |✔️|
 |**ES6**                           |✔️|
 |**React**                         |✔️|
-|**Redux**                         |![done][done]|
-|**Backbone**                      |![done][done]|
-|**Git**                           |![done][done]|
-|**Git bash**                      |![done][done]|
-|**GitHub**                        |![done][done]|
-|**Bitbucket**                     |![done][done]|
-|**Gulp/Webpack**                  |![done][done]|
-|**Agile**                         |![done][done]|
-|**Stylus**                        |![done][done]|
-|**Working with APIs**             |![done][done]|
-|**jQuery**                        |![done][done]|
-|**Css Grid & Flex-box**           |![done][done]|
-|**Responsive design**             |![done][done]|
-|**Mobile first**                  |![done][done]|
-|**Progressive Enhancement**       |![done][done]|
-|**Markdown**                      |![done][done]|
-|**Website Building**              |![done][done]|
-|**Publishing website**            |![done][done]|
-|**Bootstrap**                     |![done][done]|
-|**Command line**                  |![done][done]|
-|**Node.js**                       |![done][done]|
-|**NPM**                           |![done][done]|
-|**Open Source Contribution**      |![done][done]|
-|**Angular 4**                     |![done][done]|
-|**NPM scripts**                   |![done][done]|
+|**Redux**                         |✔️|
+|**Backbone**                      |✔️|
+|**Git**                           |✔️|
+|**Git bash**                      |✔️|
+|**GitHub**                        |✔️|
+|**Bitbucket**                     |✔️|
+|**Gulp/Webpack**                  |✔️|
+|**Agile**                         |✔️|
+|**Stylus**                        |✔️|
+|**Working with APIs**             |✔️|
+|**jQuery**                        |✔️|
+|**Css Grid & Flex-box**           |✔️|
+|**Responsive design**             |✔️|
+|**Mobile first**                  |✔️|
+|**Progressive Enhancement**       |✔️|
+|**Markdown**                      |✔️|
+|**Website Building**              |✔️|
+|**Publishing website**            |✔️|
+|**Bootstrap**                     |✔️|
+|**Command line**                  |✔️|
+|**Node.js**                       |✔️|
+|**NPM**                           |✔️|
+|**NPM scripts**                   |✔️|
 
 ----
 
