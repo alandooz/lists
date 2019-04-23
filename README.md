@@ -11,33 +11,33 @@
 |**HTML5**                         |![done][done]|
 |**CSS3**                          |![done][done]|
 |**JavaScript**                    |![done][done]|
-|**ES6**                           | ![done][done]     | ![done][done] | ![done][done] |                  |                |                 |
-|**React**                         | ![done][done]     | ![done][done] | ![done][done] |                  |                |                 |
-|**Redux**                         | ![done][done]     | ![done][done] |               |                  |                |                 |
-|**Backbone**                      | ![done][done]     | ![done][done] | ![done][done] |                  |                |                 |
-|**Git**                           | ![done][done]     | ![done][done] | ![done][done] | ![done][done]    |                |                 |
-|**Git bash**                      | ![done][done]     | ![done][done] | ![done][done] |                  |                |                 |
-|**GitHub**                        | ![done][done]     | ![done][done] | ![done][done] | ![done][done]    |                |                 |
-|**Bitbucket**                     | ![done][done]     | ![done][done] | ![done][done] | ![done][done]    |                |                 |
-|**Gulp/Webpack**                  | ![done][done]     | ![done][done] |               |                  |                |                 |
-|**Agile**                         | ![done][done]     | ![done][done] | ![done][done] |                  |                |                 |
-|**Stylus**                        | ![done][done]     | ![done][done] | ![done][done] |                  |                |                 |
-|**Working with APIs**             | ![done][done]     | ![done][done] | ![done][done] |                  |                |                 |
-|**jQuery**                        | ![done][done]     | ![done][done] | ![done][done] | ![done][done]    |                |                 |
-|**Css Grid & Flex-box**           | ![done][done]     | ![done][done] | ![done][done] | ![done][done]    |                |                 |
-|**Responsive design**             | ![done][done]     | ![done][done] | ![done][done] | ![done][done]    |                |                 |
-|**Mobile first**                  | ![done][done]     | ![done][done] | ![done][done] | ![done][done]    |                |                 |
-|**Progressive Enhancement**       | ![done][done]     | ![done][done] | ![done][done] | ![done][done]    |                |                 |
-|**Markdown**                      | ![done][done]     | ![done][done] | ![done][done] | ![done][done]    | ![done][done]  |                 |
-|**Website Building**              | ![done][done]     | ![done][done] | ![done][done] | ![done][done]    |                |                 |
-|**Publishing website**            | ![done][done]     | ![done][done] | ![done][done] |                  |                |                 |
-|**Bootstrap**                     | ![done][done]     | ![done][done] | ![done][done] |                  |                |                 |
-|**Command line**                  | ![done][done]     | ![done][done] | ![done][done] |                  |                |                 |
-|**Node.js**                       | ![done][done]     | ![done][done] |               |                  |                |                 |
-|**NPM**                           | ![done][done]     | ![done][done] |               |                  |                |                 |
-|**Open Source Contribution**      | ![done][done]     | ![done][done] |               |                  |                |                 |
-|**Angular 4**                     | ![done][done]     |               |               |                  |                |                 |
-|**NPM scripts**                   | ![done][done]     |               |               |                  |                |          .      |
+|**ES6**                           |![done][done]|
+|**React**                         |![done][done]|
+|**Redux**                         |![done][done]|
+|**Backbone**                      |![done][done]|
+|**Git**                           |![done][done]|
+|**Git bash**                      |![done][done]|
+|**GitHub**                        |![done][done]|
+|**Bitbucket**                     |![done][done]|
+|**Gulp/Webpack**                  |![done][done]|
+|**Agile**                         |![done][done]|
+|**Stylus**                        |![done][done]|
+|**Working with APIs**             |![done][done]|
+|**jQuery**                        |![done][done]|
+|**Css Grid & Flex-box**           |![done][done]|
+|**Responsive design**             |![done][done]|
+|**Mobile first**                  |![done][done]|
+|**Progressive Enhancement**       |![done][done]|
+|**Markdown**                      |![done][done]|
+|**Website Building**              |![done][done]|
+|**Publishing website**            |![done][done]|
+|**Bootstrap**                     |![done][done]|
+|**Command line**                  |![done][done]|
+|**Node.js**                       |![done][done]|
+|**NPM**                           |![done][done]|
+|**Open Source Contribution**      |![done][done]|
+|**Angular 4**                     |![done][done]|
+|**NPM scripts**                   |![done][done]|
 
 ----
 
