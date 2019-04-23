@@ -8,11 +8,11 @@
 
 |               Skill              | 1<br>Introduction | 2<br>Basics   | 3<br>Good     | 4<br>Pretty Good | 5<br>Confident | 6<br>Awesome    |
 |:-------------------------------- |:-----------------:|:-------------:|:-------------:|:----------------:|:--------------:|:---------------:|
-|**HTML5**                         |![done][done]|
-|**CSS3**                          |![done][done]|
-|**JavaScript**                    |![done][done]|
-|**ES6**                           |![done][done]|
-|**React**                         |![done][done]|
+|**HTML5**                         |✔️|
+|**CSS3**                          |✔️|
+|**JavaScript**                    |✔️|
+|**ES6**                           |✔️|
+|**React**                         |✔️|
 |**Redux**                         |![done][done]|
 |**Backbone**                      |![done][done]|
 |**Git**                           |![done][done]|
