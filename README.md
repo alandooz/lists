@@ -36,35 +36,6 @@
 |   | Book | [YDKJS: Async & Performance](https://github.com/getify/You-Dont-Know-JS/blob/master/async%20&%20performance/README.md#you-dont-know-js-async--performance) |   |    |
 |   | Book | [YDKJS: ES6 & Beyond](https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&%20beyond/README.md#you-dont-know-js-es6--beyond) |   |    |
 
-
-## React
-
-| Progress | Type | Item | Project(s) | Date |
-|:------:|------|------|------------|:-------:|
-|   | Course | Learn React - [React For Beginners - Wes Bos](https://reactforbeginners.com/) (Paid) or [React Fundamentals - Tyler Mcginnis](https://reacttraining.com/online/react-fundamentals) (Paid) OR [Learn React @Egghead.io](https://egghead.io/courses/start-learning-react) |   |    |
-|   | Course | Learn Redux - [Redux course - Wes Bos](https://learnredux.com/) |   |    |
-|   | Project | FCC React Project - [Build a Markdown Previewer](https://www.freecodecamp.com/challenges/build-a-markdown-previewer) |   |    |
-|   | Project |  FCC React Project - [Build a Recipe Box App](https://www.freecodecamp.com/challenges/build-a-recipe-box) |   |    |
-|   | Project |  Clone the Netflix interface using React - pulling data from [the Movie DB API](https://www.themoviedb.org/documentation/api) |   |    |
-|   | Project | Clone [this Admin template](http://rubix410.sketchpixy.com/ltr/dashboard) using React |   |    |
-
-## Backend (Node)
-| Progress | Type | Item | Project(s) | Date |
-|:------:|------|------|------------|:-------:|
-|   | Course | [Learn Node - Wes Bos](https://learnnode.com/) (Paid) OR Nodeschool.io [Tutorials](https://nodeschool.io/) |   |    |
-|   | Project | FCC Backend Project - [Timestamp Microservice](https://www.freecodecamp.com/challenges/timestamp-microservice) |   |    |
-|   | Project | FCC Backend Project- [Request Header Parser Microservice](https://www.freecodecamp.com/challenges/request-header-parser-microservice) |   |    |
-|   | Project | FCC Backend Project- [URL Shortener Microservice](https://www.freecodecamp.com/challenges/url-shortener-microservice) |   |    |
-|   | Project | FCC Backend Project- [Image Search Abstraction Layer](https://www.freecodecamp.com/challenges/image-search-abstraction-layer) |   |    |
-|   | Project | FCC Backend Project- [File Metadata Microservice](https://www.freecodecamp.com/challenges/file-metadata-microservice) |   |    |
-|   | Project | FCC Backend Project- [Build a Voting App](https://www.freecodecamp.com/challenges/build-a-voting-app) |   |    |
-|   | Project | FCC Backend Project- [Build a Nightlife Coordination App](https://www.freecodecamp.com/challenges/build-a-nightlife-coordination-app) |   |    |
-|   | Project | FCC Backend Project- [Chart the Stock Market](https://www.freecodecamp.com/challenges/chart-the-stock-market) |   |    |
-|   | Project | FCC Backend Project- [Manage a Book Trading Club](https://www.freecodecamp.com/challenges/manage-a-book-trading-club) |   |    |
-|   | Project | FCC Backend Project- [Build a Pinterest Clone](https://www.freecodecamp.com/challenges/build-a-pinterest-clone) |   |    |
-|   | Milestone | FreeCodeCamp BackEnd certificate |   |    |
-
-
 ## Extra Goals
 * Learn to setup your own local developement environment
 * Deploy completed projects using [Github Pages](https://pages.github.com/) or [surge.sh](http://surge.sh/) (Both front-end only) Or [Glitch](https://glitch.com/) (Works with back-end too)
