@@ -11,31 +11,7 @@
 |**HTML5**                         |✔️|
 |**CSS3**                          |✔️|
 |**JavaScript**                    |✔️|
-|**ES6**                           |✔️|
-|**React**                         |✔️|
-|**Redux**                         |✔️|
-|**Backbone**                      |✔️|
-|**Git**                           |✔️|
-|**Git bash**                      |✔️|
-|**GitHub**                        |✔️|
-|**Bitbucket**                     |✔️|
-|**Gulp/Webpack**                  |✔️|
-|**Agile**                         |✔️|
-|**Stylus**                        |✔️|
-|**Working with APIs**             |✔️|
-|**jQuery**                        |✔️|
-|**Css Grid & Flex-box**           |✔️|
-|**Responsive design**             |✔️|
-|**Mobile first**                  |✔️|
-|**Progressive Enhancement**       |✔️|
-|**Markdown**                      |✔️|
-|**Website Building**              |✔️|
-|**Publishing website**            |✔️|
-|**Bootstrap**                     |✔️|
-|**Command line**                  |✔️|
-|**Node.js**                       |✔️|
-|**NPM**                           |✔️|
-|**NPM scripts**                   |✔️|
+
 
 ----
 
