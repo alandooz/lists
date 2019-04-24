@@ -8,7 +8,7 @@
 
 |               Skill              | 1<br>Introduction | 2<br>Basics   | 3<br>Good     | 4<br>Pretty Good | 5<br>Confident | 6<br>Awesome    |
 |:-------------------------------- |:-----------------:|:-------------:|:-------------:|:----------------:|:--------------:|:---------------:|
-|**HTML5**                         |:heavy_check_mark:|
+|**HTML5**                         |✔️|
 |**CSS3**                          |✔️|
 |**JavaScript**                    |✔️|
 |**ES6**                           |✔️|
