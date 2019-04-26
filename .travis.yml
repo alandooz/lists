@@ -1,0 +1,14 @@
+dist: trusty
+language: node_js
+node_js: stable
+install:
+ - npm install
+deploy:
+ local-dir: dist
+ target-branch: gh-pages
+ provider: pages
+ skip-cleanup: true
+ github-token: $GITHUB_TOKEN
+ keep-history: true
+ on:
+  branch: master
