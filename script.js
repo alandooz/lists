@@ -28,12 +28,15 @@ xhr.addEventListener("load", function () {
           li.appendChild(titleurl);
           li.appendChild(path);
         } else if (json[j].items) {
-          let data2 = document.createElement("div");
-          let title = document.createElement("p");
+          let title = document.createElement("button");
+          title.classList.add("accordion");
           title.innerText = json[j].title;
           li.appendChild(title);
-          let subUl = retrieveData(json[j].items);
-          li.appendChild(subUl);
+          let items = document.createElement("div");
+          items.classList.add("panel");
+          let itemslist = retrieveData(json[j].items);
+          items.appendChild(itemslist);
+          li.appendChild(items);
         }
         ul.appendChild(li);
       }
@@ -44,3 +47,35 @@ xhr.addEventListener("load", function () {
 });
 
 xhr.send();
+
+let accordion = document.getElementsByClassName("accordion");
+for (let i = 0; i < accordion.length; i++) {
+  accordion[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+// {
+//   "id": "uuid4",
+//   "title": "Folder",
+//   "items": [
+//   ]
+// }
+
+// {
+//   "id": "uuid4",
+//   "title": "Course",
+//   "description": "Description",
+//   "url": "#",
+//   "status": "✔️",
+//   "type": "💻",
+//   "tutor": "Tutor",
+//   "time": "Time",
+//   "price": "💲"
+// }
