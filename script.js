@@ -1,3 +1,9 @@
+function uuidv4() {
+  return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+    (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+  )
+}
+
 let body = document.getElementById('body');
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "path.json");
@@ -13,43 +19,34 @@ xhr.addEventListener("load", function () {
       body.appendChild(data);
     }
 
-    let accordion = document.getElementsByClassName("accordion");
-    for (let i = 0; i < accordion.length; i++) {
-      accordion[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        let panel = this.nextElementSibling;
-        if (panel.style.maxHeight){
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        } 
-      });
-    }
-
     function retrieveData(json) {
       let ul = document.createElement("ul");
       for (let j = 0; j < json.length; j++) {
         let li = document.createElement("li");
         if (!json[j].items) {
-          let titleurl = document.createElement("p");
           let link = document.createElement("a");
           link.href = json[j].url;
           link.innerText = json[j].title;
-          let path = document.createElement("p");
-          path.innerText = json[j].path;
-          titleurl.appendChild(link);
-          li.appendChild(titleurl);
-          li.appendChild(path);
+          li.appendChild(link);
         } else if (json[j].items) {
-          let title = document.createElement("button");
-          title.classList.add("accordion");
+          let tab = document.createElement("div");
+          tab.classList.add("tab");
+          let input = document.createElement("input");
+          input.type = "checkbox";
+          let uid = uuidv4();
+          input.id = uid;
+          let title = document.createElement("label");
+          title.classList.add("tab-label");
+          title.htmlFor = uid;
           title.innerText = json[j].title;
-          li.appendChild(title);
-          let items = document.createElement("div");
-          items.classList.add("panel");
+          let content = document.createElement("div");
+          content.classList.add("tab-content");
           let itemslist = retrieveData(json[j].items);
-          items.appendChild(itemslist);
-          li.appendChild(items);
+          content.appendChild(itemslist);
+          tab.appendChild(input);
+          tab.appendChild(title);
+          tab.appendChild(content);
+          li.appendChild(tab);
         }
         ul.appendChild(li);
       }
