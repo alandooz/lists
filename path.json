@@ -1,6 +1,6 @@
 [
   {
-    "title": "Learn",
+    "title": "Courses",
     "items": [
       {
         "title": "Arts",
@@ -508,6 +508,151 @@
             "url": "http://ureddit.com/"
           },
           {
+            "title": "Duolingo",
+            "url": "https://www.duolingo.com",
+            "status": "started"
+          },
+          {
+            "title": "Codo a Codo",
+            "url": "https://aulavirtual.codoacodo.com.ar/",
+            "status": "started"
+          },
+          {
+            "title": "UBA XXI",
+            "url": "https://www.ubaxxicampusvirtual.uba.ar/",
+            "status": "started"
+          },
+          {
+            "title": "Tastemade Español",
+            "url": "https://es.tastemade.com/",
+            "status": "started"
+          },
+          {
+            "title": "Vitalsource",
+            "url": "https://online.vitalsource.com/",
+            "status": "started"
+          },
+          {
+            "title": "Nooddle",
+            "url": "https://nooddle.es/",
+            "status": "started"
+          },
+          {
+            "title": "Vegetariano en 21 días",
+            "url": "https://kickstart.pcrm.org/",
+            "status": "started"
+          },
+          {
+            "title": "Go Make Thinks",
+            "url": "https://courses.gomakethings.com/",
+            "status": "started"
+          },
+          {
+            "title": "Linkedin Learning",
+            "url": "https://www.linkedin.com/learning/me",
+            "status": "started"
+          },
+          {
+            "title": "Pluralsight",
+            "url": "https://app.pluralsight.com/library/",
+            "status": "started"
+          },
+          {
+            "title": "Masterclass",
+            "url": "https://www.masterclass.com/",
+            "status": "started"
+          },
+          {
+            "title": "YouTube Creator Academy",
+            "url": "https://creatoracademy.youtube.com/",
+            "status": "started"
+          },
+          {
+            "title": "CreativeLive",
+            "url": "https://www.creativelive.com/onair",
+            "status": "started"
+          },
+          {
+            "title": "Crehana",
+            "url": "https://www.crehana.com/panel/#/mis-cursos",
+            "status": "started"
+          },
+          {
+            "title": "Edutin",
+            "url": "https://edutin.com/",
+            "status": "started"
+          },
+          {
+            "title": "Exercism",
+            "url": "https://exercism.io/",
+            "status": "started"
+          },
+          {
+            "title": "Mimo",
+            "url": "https://getmimo.com/",
+            "status": "started"
+          },
+          {
+            "title": "Udemy",
+            "url": "https://www.udemy.com/",
+            "status": "started"
+          },
+          {
+            "title": "Wmedia",
+            "url": "https://sso.teachable.com/secure/teachable_accounts/profile",
+            "status": "started"
+          },
+          {
+            "title": "Code with Mosh",
+            "url": "https://sso.teachable.com/secure/teachable_accounts/profile",
+            "status": "started"
+          },
+          {
+            "title": "Freecodecamp",
+            "url": "https://www.freecodecamp.org/",
+            "status": "started"
+          },
+          {
+            "title": "Coursera",
+            "url": "https://www.coursera.org/",
+            "status": "started"
+          },
+          {
+            "title": "Solo Learn",
+            "url": "https://www.sololearn.com/",
+            "status": "started"
+          },
+          {
+            "title": "Edx",
+            "url": "https://www.edx.org/",
+            "status": "started"
+          },
+          {
+            "title": "Khan Academy",
+            "url": "https://www.khanacademy.org/",
+            "status": "started"
+          },
+          {
+            "title": "HackerOne",
+            "url": "https://hackerone.com/hacker_dashboard/",
+            "status": "started"
+          },
+          {
+            "title": "Punto Digital",
+            "url": "https://cursos-puntodigital.paisdigital.modernizacion.gob.ar/",
+            "status": "started"
+          },
+          {
+            "title": "Academia BA Emprende Virtual",
+            "url": "https://www.buenosaires.gob.ar/innovacion/emprendedores/capacitacion-e-incubadoras/academia-ba-emprende/virtual",
+            "status": "started"
+          },
+          {
+            "title": "Ted",
+            "url": "https://www.ted.com/",
+            "status": "started"
+          },
+          {
             "title": "Learn Anything",
             "url": "https://learn-anything.xyz/"
           }
@@ -575,10 +720,6 @@
                         "url": "https://scotch.io/courses/getting-started-with-javascript"
                       },
                       {
-                        "title": "Eloquent JavaScript",
-                        "url": "http://eloquentjavascript.net/"
-                      },
-                      {
                         "title": "Learn Javascript · GitBook",
                         "url": "https://www.gitbook.com/book/gitbookio/javascript/details"
                       },
@@ -588,7 +729,8 @@
                       },
                       {
                         "title": "Eloquent JavaScript",
-                        "url": "https://eloquentjavascript.net/"
+                        "url": "https://eloquentjavascript.net/",
+                        "status": "started"
                       },
                       {
                         "title": "Standard ECMA-262",
@@ -657,7 +799,8 @@
                     "items": [
                       {
                         "title": "CSS Grid — Learn all about CSS Grid with Wes Bos in this free video series!",
-                        "url": "https://cssgrid.io/"
+                        "url": "https://cssgrid.io/",
+                        "status": "started"
                       },
                       {
                         "title": "Learn CSS Grid for free | Scrimba.com",
@@ -685,7 +828,8 @@
                       },
                       {
                         "title": "Interneting Is Hard | Web Development Tutorials For Complete Beginners",
-                        "url": "https://internetingishard.com/"
+                        "url": "https://internetingishard.com/",
+                        "status": "started"
                       },
                       {
                         "title": "Grid Garden - Un juego para aprender CSS grid",
@@ -785,7 +929,8 @@
                       },
                       {
                         "title": "W3Schools Online Web Tutorials",
-                        "url": "http://www.w3schools.com/"
+                        "url": "http://www.w3schools.com/",
+                        "status": "started"
                       },
                       {
                         "title": "Material Design",
@@ -1275,7 +1420,8 @@
                 "items": [
                   {
                     "title": "How HTTPS works - How HTTPS works",
-                    "url": "https://howhttps.works/"
+                    "url": "https://howhttps.works/",
+                    "status": "started"
                   },
                   {
                     "title": "How DNS works",
@@ -1385,7 +1531,8 @@
                 "items": [
                   {
                     "title": "Hacker101",
-                    "url": "https://www.hacker101.com/"
+                    "url": "https://www.hacker101.com/",
+                    "status": "started"
                   },
                   {
                     "title": "Welcome to HackerOne Docs | HackerOne Platform Documentation",

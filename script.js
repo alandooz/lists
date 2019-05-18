@@ -11,12 +11,19 @@ xhr.addEventListener("load", function () {
   if (xhr.status == 200) {
 
     let jsonData = JSON.parse(xhr.responseText);
-
     if (jsonData.length > 0) {
       let data = document.createElement("div");
+      var started = [{
+        "title": "Active",
+        "items": []
+      }]
       let ul = retrieveData(jsonData);
+      let ulstarted = retrieveData(started);
+      let listarted = document.createElement("li");
+      listarted.appendChild(ulstarted);
       data.appendChild(ul);
       body.appendChild(data);
+      document.getElementById("itemslist").prepend(listarted);
     }
 
     function retrieveData(json) {
@@ -24,6 +31,11 @@ xhr.addEventListener("load", function () {
       for (let j = 0; j < json.length; j++) {
         let li = document.createElement("li");
         if (!json[j].items) {
+          if (json[j].status == "started") {
+            let x = JSON.parse(JSON.stringify(json[j]));
+            delete x.status;
+            started[0].items.push(x);
+          }
           let link = document.createElement("a");
           link.href = json[j].url;
           link.innerText = json[j].title;
@@ -42,6 +54,7 @@ xhr.addEventListener("load", function () {
           let content = document.createElement("div");
           content.classList.add("tab-content");
           let itemslist = retrieveData(json[j].items);
+          itemslist.id = "itemslist";
           content.appendChild(itemslist);
           tab.appendChild(input);
           tab.appendChild(title);

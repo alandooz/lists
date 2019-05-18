@@ -1,5 +1,11 @@
+body {
+  background-color: black;
+  color: azure;
+}
+
 h1 {
-  text-align: center
+  text-align: center;
+  text-transform: uppercase;
 }
 
 ul {
@@ -10,6 +16,22 @@ ul {
 li {
   overflow: hidden;
   padding: 0.5em;
+}
+
+a {
+  color: white;
+}
+
+a:link {
+  font-weight: bold;
+  text-decoration: none;
+}
+a:visited {
+  font-weight: bold;
+  text-decoration: line-through;
+}
+a:hover, a:focus {
+  text-decoration: underline overline;
 }
 
 input {
@@ -49,7 +71,6 @@ input {
   max-height: 0;
   padding: 0 1em;
   color: #2c3e50;
-  background: white;
   transition: all .35s;
 }
 
