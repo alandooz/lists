@@ -472,11 +472,13 @@
                   },
                   {
                     "title": "Garage Digital – Google",
-                    "url": "https://learndigital.withgoogle.com/garagedigital"
+                    "url": "https://learndigital.withgoogle.com/garagedigital",
+                    "status": "active"
                   },
                   {
                     "title": "Digital Garage – Google",
-                    "url": "https://learndigital.withgoogle.com/digitalgarage"
+                    "url": "https://learndigital.withgoogle.com/digitalgarage",
+                    "status": "active"
                   },
                   {
                     "title": "Nonprofits on Facebook",
@@ -592,147 +594,147 @@
           {
             "title": "Duolingo",
             "url": "https://www.duolingo.com",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Codo a Codo",
             "url": "https://aulavirtual.codoacodo.com.ar/",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "UBA XXI",
             "url": "https://www.ubaxxicampusvirtual.uba.ar/",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Tastemade Español",
             "url": "https://es.tastemade.com/",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Vitalsource",
             "url": "https://online.vitalsource.com/",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Nooddle",
             "url": "https://nooddle.es/",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Vegetariano en 21 días",
             "url": "https://kickstart.pcrm.org/",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Go Make Thinks",
             "url": "https://courses.gomakethings.com/",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Linkedin Learning",
             "url": "https://www.linkedin.com/learning/me",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Pluralsight",
             "url": "https://app.pluralsight.com/library/",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Masterclass",
             "url": "https://www.masterclass.com/",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "YouTube Creator Academy",
             "url": "https://creatoracademy.youtube.com/",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "CreativeLive",
             "url": "https://www.creativelive.com/onair",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Crehana",
             "url": "https://www.crehana.com/panel/#/mis-cursos",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Edutin",
             "url": "https://edutin.com/",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Exercism",
             "url": "https://exercism.io/",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Mimo",
             "url": "https://getmimo.com/",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Udemy",
             "url": "https://www.udemy.com/",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Wmedia",
             "url": "https://sso.teachable.com/secure/teachable_accounts/profile",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Code with Mosh",
             "url": "https://sso.teachable.com/secure/teachable_accounts/profile",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Freecodecamp",
             "url": "https://www.freecodecamp.org/",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Coursera",
             "url": "https://www.coursera.org/",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Solo Learn",
             "url": "https://www.sololearn.com/",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Edx",
             "url": "https://www.edx.org/",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Khan Academy",
             "url": "https://www.khanacademy.org/",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "HackerOne",
             "url": "https://hackerone.com/hacker_dashboard/",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Punto Digital",
             "url": "https://cursos-puntodigital.paisdigital.modernizacion.gob.ar/",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Academia BA Emprende Virtual",
             "url": "https://www.buenosaires.gob.ar/innovacion/emprendedores/capacitacion-e-incubadoras/academia-ba-emprende/virtual",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Ted",
             "url": "https://www.ted.com/",
-            "status": "started"
+            "status": "active"
           },
           {
             "title": "Learn Anything",
@@ -812,7 +814,7 @@
                       {
                         "title": "Eloquent JavaScript",
                         "url": "https://eloquentjavascript.net/",
-                        "status": "started"
+                        "status": "active"
                       },
                       {
                         "title": "Standard ECMA-262",
@@ -882,7 +884,7 @@
                       {
                         "title": "CSS Grid — Learn all about CSS Grid with Wes Bos in this free video series!",
                         "url": "https://cssgrid.io/",
-                        "status": "started"
+                        "status": "active"
                       },
                       {
                         "title": "Learn CSS Grid for free | Scrimba.com",
@@ -911,7 +913,7 @@
                       {
                         "title": "Interneting Is Hard | Web Development Tutorials For Complete Beginners",
                         "url": "https://internetingishard.com/",
-                        "status": "started"
+                        "status": "active"
                       },
                       {
                         "title": "Grid Garden - Un juego para aprender CSS grid",
@@ -1012,7 +1014,7 @@
                       {
                         "title": "W3Schools Online Web Tutorials",
                         "url": "http://www.w3schools.com/",
-                        "status": "started"
+                        "status": "active"
                       },
                       {
                         "title": "Material Design",
@@ -1503,7 +1505,7 @@
                   {
                     "title": "How HTTPS works - How HTTPS works",
                     "url": "https://howhttps.works/",
-                    "status": "started"
+                    "status": "active"
                   },
                   {
                     "title": "How DNS works",
@@ -1614,7 +1616,7 @@
                   {
                     "title": "Hacker101",
                     "url": "https://www.hacker101.com/",
-                    "status": "started"
+                    "status": "active"
                   },
                   {
                     "title": "Welcome to HackerOne Docs | HackerOne Platform Documentation",

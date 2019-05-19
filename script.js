@@ -31,7 +31,7 @@ xhr.addEventListener("load", function () {
       for (let j = 0; j < json.length; j++) {
         let li = document.createElement("li");
         if (!json[j].items) {
-          if (json[j].status == "started") {
+          if (json[j].status == "active") {
             let x = JSON.parse(JSON.stringify(json[j]));
             delete x.status;
             started[0].items.push(x);
