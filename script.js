@@ -6,7 +6,7 @@ function uuidv4() {
 
 let body = document.getElementById('body');
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "path.json");
+xhr.open("GET", "lists.json");
 xhr.addEventListener("load", function () {
   if (xhr.status == 200) {
 

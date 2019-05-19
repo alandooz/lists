@@ -2241,5 +2241,2400 @@
         ]
       }
     ]
+  },
+  {
+    "title": "OS",
+    "items": [
+      {
+        "title": "YunoHost | YunoHost is a server operating system aiming to make self-hosting accessible to everyone.",
+        "url": "https://yunohost.org/"
+      },
+      {
+        "title": "Apricity OS | Busca unir diseño y rendimiento basándose en Arch y GNOME",
+        "url": "https://apricity-os.github.io/"
+      },
+      {
+        "title": "Arch Linux | Sencillo OS que instala solo lo necesario para cada PC.",
+        "url": "https://www.archlinux.org/"
+      },
+      {
+        "title": "arkOS | OS de hosting de web,mail, archivos y más.",
+        "url": "http://arkos.io/"
+      },
+      {
+        "title": "maru | One device. A whole lot of productivity. Maru takes advantage of your HDMI screen to bring you multi-app, desktop-class productivity. Create a spreadsheet, perfect your slide deck, or spiffy up your resume. You'll never believe you could get so muc",
+        "url": "http://maruos.com/#/"
+      },
+      {
+        "title": "Zorin OS | Zorin OS is a replacement for Windows and macOS, designed to make your computer faster, more powerful and secure.",
+        "url": "https://zorinos.com/"
+      },
+      {
+        "title": "Xubuntu | Basado en Ubuntu pero en Xfce.",
+        "url": "https://xubuntu.org/"
+      },
+      {
+        "title": "Ubuntu MATE | Ubuntu MATE is a free and open-source Linux distribution and an official derivative of Ubuntu that it uses MATE.",
+        "url": "https://ubuntu-mate.org/"
+      },
+      {
+        "title": "Ubuntu | OS Popular basado en Debian.",
+        "url": "https://www.ubuntu.com/"
+      },
+      {
+        "title": "Rescatux | Ayuda a arreglar algunas cosas del OS y la PC.",
+        "url": "https://www.supergrubdisk.org/rescatux/"
+      },
+      {
+        "title": "ReactOS | Open Source Windows.",
+        "url": "https://www.reactos.org/"
+      },
+      {
+        "title": "NAS4Free | NAS, administrar archivos, etc.",
+        "url": "https://www.nas4free.org/"
+      },
+      {
+        "title": "Mine OS | OS dedicado a ser un servidor para Minecraft.",
+        "url": "http://minecraft.codeemo.com/"
+      },
+      {
+        "title": "lubuntu | Basado en Ubuntu, con escritorio LXDE, muy ligero, pocos requerimientos de hardware.",
+        "url": "https://lubuntu.net/"
+      },
+      {
+        "title": "Linux Mint | Basado en Debian y Ubuntu, linda interfaz.",
+        "url": "https://www.linuxmint.com/"
+      },
+      {
+        "title": "Kubuntu | An official derivative of Ubuntu Linux that uses the KDE graphical environment instead of GNOME",
+        "url": "https://kubuntu.org/"
+      },
+      {
+        "title": "Huayra | OS educativo basado en Debian diseñado por Conectar Igualdad, Argentina.",
+        "url": "https://huayra.conectarigualdad.gob.ar/"
+      },
+      {
+        "title": "elementary OS | Elegante, simple, algo parecido al OS de Apple.",
+        "url": "https://elementary.io/"
+      },
+      {
+        "title": "Debian | OS popular.",
+        "url": "https://www.debian.org/"
+      },
+      {
+        "title": "Cr OS Linux | This open source project provides a lightweight Linux distribution similar to Google Chrome OS for the best web browsing experience on any x86 PC, netbook or notebook.",
+        "url": "http://getchrome.eu/"
+      },
+      {
+        "title": "Clonezilla Live | Backup, reparación de discos, etc.",
+        "url": "https://clonezilla.org/clonezilla-live.php"
+      },
+      {
+        "title": "ChaletOS | Distribución Linux que simula la estética de Windows 10.",
+        "url": "https://sites.google.com/site/chaletoslinux/"
+      },
+      {
+        "title": "ArchLabs Linux | Inspired by BunsenLabs. Powered by Arch Linux.",
+        "url": "https://archlabslinux.com/"
+      },
+      {
+        "title": "Antergos | Your Linux. Always Fresh. Never Frozen.",
+        "url": "https://antergos.com/"
+      },
+      {
+        "title": "KolibriOS",
+        "url": "http://www.kolibrios.org/en/"
+      },
+      {
+        "title": "LineageOS | LineageOS Android Distribution",
+        "url": "https://lineageos.org/"
+      },
+      {
+        "title": "Linux Mint",
+        "url": "https://linuxmint.com/"
+      },
+      {
+        "title": "Solus",
+        "url": "https://getsol.us/home"
+      },
+      {
+        "title": "Hiren's BootCD PE",
+        "url": "https://www.hirensbootcd.org/"
+      },
+      {
+        "title": "All in One – System Rescue Toolkit – Paul Bryan Vreeland",
+        "url": "https://paul.is-a-geek.org/aio-srt/"
+      },
+      {
+        "title": "PureOS",
+        "url": "https://pureos.net/"
+      }
+    ]
+  },
+  {
+    "title": "Utility",
+    "items": [
+      {
+        "title": "Open Port Check Tool - Test Port Forwarding on Your Router",
+        "url": "http://www.yougetsignal.com/tools/open-ports/"
+      },
+      {
+        "title": "Free Online OCR - convert scanned PDF and images to Word, JPEG to Word",
+        "url": "http://www.onlineocr.net/"
+      },
+      {
+        "title": "Zamzar",
+        "url": "http://www.zamzar.com/"
+      },
+      {
+        "title": "EmailFuture.com - The best way to send emails to yourself in the future.",
+        "url": "http://emailfuture.com/"
+      },
+      {
+        "title": "Online converter - convert video, images, audio and documents for free",
+        "url": "http://www.online-convert.com/"
+      },
+      {
+        "title": "Web 2.0 calculadora científica",
+        "url": "http://web2.0calc.es/"
+      },
+      {
+        "title": "Merge PDF and split PDF online. Free merge PDF or split PDF",
+        "url": "http://www.ilovepdf.com/"
+      },
+      {
+        "title": "TinEye Reverse Image Search",
+        "url": "http://www.tineye.com/"
+      },
+      {
+        "title": "CoSketch.com - Online Whiteboard Collaboration",
+        "url": "http://cosketch.com/"
+      },
+      {
+        "title": "Screenfly by QuirkTools — Test Your Website at Different Screen Resolutions",
+        "url": "http://quirktools.com/screenfly/"
+      },
+      {
+        "title": "Ruta 0",
+        "url": "http://www.ruta0.com/"
+      },
+      {
+        "title": "Make Pixel Art!",
+        "url": "http://makepixelart.com/free/"
+      },
+      {
+        "title": "File Destructor 2.0 - Hype Magazine",
+        "url": "http://www.xnet.se/fd/"
+      },
+      {
+        "title": "Adobe Color CC - Color wheel",
+        "url": "https://color.adobe.com/es/create/color-wheel/"
+      },
+      {
+        "title": "Facilitador do Scribd!",
+        "url": "http://henriqueramos.eti.br/scribd.php"
+      },
+      {
+        "title": "Descargar libros de Issuu",
+        "url": "http://utilidades.gatovolador.net/issuu/"
+      },
+      {
+        "title": "favicon.ico",
+        "url": "http://www.favicon.cc/"
+      },
+      {
+        "title": "Algorithmia Colorize Photos",
+        "url": "http://demos.algorithmia.com/colorize-photos/"
+      },
+      {
+        "title": "SlideGrubber Back up your SlideShare presentations to PDF",
+        "url": "http://grub.cballenar.me/"
+      },
+      {
+        "title": "Direcciones de correo electrónicos temporales y desechables",
+        "url": "https://temp-mail.org/es/"
+      },
+      {
+        "title": "Online Audio Converter (MP3, WAV, Ogg, WMA, M4A, AAC) – media.io",
+        "url": "http://media.io/"
+      },
+      {
+        "title": "Consulta de IMEI - Robados - ENACOM",
+        "url": "https://www.enacom.gob.ar/imei"
+      },
+      {
+        "title": "Material Design Logo Generator - Material Design for Bootstrap",
+        "url": "https://mdbootstrap.com/material-design-logo-generator/"
+      },
+      {
+        "title": "Herramienta de superposición de texto",
+        "url": "https://www.facebook.com/ads/tools/text_overlay"
+      },
+      {
+        "title": "RubikSolve - Solve Your Cube in Fewer Than 25 Moves",
+        "url": "http://rubiksolve.com/"
+      },
+      {
+        "title": "Free App | Spreeder",
+        "url": "https://www.spreeder.com/app.php"
+      },
+      {
+        "title": "What is my screen resolution",
+        "url": "https://whatismyscreenresolution.com/"
+      },
+      {
+        "title": "mydevice.io : web devices capabilities",
+        "url": "https://mydevice.io/"
+      },
+      {
+        "title": "mydevice.io know your mobile device (pixel-ratio, CSS width, features)",
+        "url": "https://mydevice.io/devices/"
+      },
+      {
+        "title": "Thread Reader",
+        "url": "https://tttthreads.com/"
+      },
+      {
+        "title": "Napchart",
+        "url": "https://napchart.com/"
+      },
+      {
+        "title": "Can I use... Support tables for HTML5, CSS3, etc",
+        "url": "https://caniuse.com/"
+      },
+      {
+        "title": "Can You RUN It | Can I run that game | Game system requirements",
+        "url": "https://www.systemrequirementslab.com/cyri"
+      },
+      {
+        "title": "Corrupt a file - Corrupt file online, deliver on time!",
+        "url": "https://corrupt-a-file.net/"
+      },
+      {
+        "title": "Corrupt My File: Get your file corrupted for you",
+        "url": "http://www.corruptmyfile.com/"
+      },
+      {
+        "title": "i2OCR - Free Online OCR",
+        "url": "http://www.i2ocr.com/"
+      },
+      {
+        "title": "ENACOM Buscador de prestador telefónico",
+        "url": "http://numeracion.enacom.gob.ar/numeracion/"
+      },
+      {
+        "title": "explainshell.com - match command-line arguments to their help text",
+        "url": "https://explainshell.com/"
+      },
+      {
+        "title": "showthedocs",
+        "url": "http://showthedocs.com/"
+      },
+      {
+        "title": "WhatTheFont! « MyFonts",
+        "url": "https://www.myfonts.com/WhatTheFont/"
+      },
+      {
+        "title": "TomatoTimer",
+        "url": "https://tomato-timer.com/"
+      },
+      {
+        "title": "Carbon",
+        "url": "https://carbon.now.sh/"
+      },
+      {
+        "title": "draw.io",
+        "url": "https://www.draw.io/"
+      },
+      {
+        "title": "Generate a Random Name - Fake Name Generator",
+        "url": "http://www.fakenamegenerator.com/"
+      },
+      {
+        "title": "Delete Your Online Accounts - All sites | accountkiller.com",
+        "url": "http://www.accountkiller.com/en/All"
+      },
+      {
+        "title": "Social Media viewer, instagram web viewer, photo, video, stories & popular users - pikdo.com",
+        "url": "https://pikdo.com/"
+      },
+      {
+        "title": "Cual es mi IP, Mi IP, Saber Mi IP, Conocer mi IP",
+        "url": "http://www.cualesmiip.com/"
+      },
+      {
+        "title": "Cámaras en vivo – Sise Argentina (Corrientes)",
+        "url": "https://siseargentina.com/camaras-en-vivo/"
+      },
+      {
+        "title": "Calculadora de inflación - Argentina",
+        "url": "https://calculadoradeinflacion.com/"
+      },
+      {
+        "title": "once.ly | protect your privacy with one-time-use shortened URLs",
+        "url": "http://once.ly/index.html"
+      },
+      {
+        "title": "Latest Earthquakes",
+        "url": "https://earthquake.usgs.gov/earthquakes/map/"
+      },
+      {
+        "title": "RSS Generator - FetchRSS",
+        "url": "http://fetchrss.com/"
+      },
+      {
+        "title": "SAVEVIDEO.ME: Descargar Videos de Dailymotion, Vimeo, Facebook, Twitter y otros!",
+        "url": "http://savevideo.me/es/"
+      },
+      {
+        "title": "WordsAPI",
+        "url": "https://www.wordsapi.com/"
+      },
+      {
+        "title": "Have I Been Pwned: Check if your email has been compromised in a data breach",
+        "url": "https://haveibeenpwned.com/"
+      },
+      {
+        "title": "How Secure Is My Password?",
+        "url": "https://howsecureismypassword.net/"
+      },
+      {
+        "title": "Terms of Service; Didn't Read",
+        "url": "https://tosdr.org/"
+      },
+      {
+        "title": "accountkiller.com",
+        "url": "https://www.accountkiller.com/en/"
+      },
+      {
+        "title": "Smash",
+        "url": "https://www.fromsmash.com/"
+      },
+      {
+        "title": "My Reading Habits",
+        "url": "http://myreadinghabits.com/welcome.php"
+      },
+      {
+        "title": "Screely - Generate Beautiful Images",
+        "url": "https://www.screely.com/"
+      },
+      {
+        "title": "Favicon Generator for all platforms: iOS, Android, PC/Mac...",
+        "url": "https://realfavicongenerator.net/"
+      },
+      {
+        "title": "The GDPR Checklist - Your GDPR compliance checklist",
+        "url": "https://gdprchecklist.io/"
+      },
+      {
+        "title": "World Population API - API Browser",
+        "url": "http://api.population.io/"
+      },
+      {
+        "title": "Free email forwarding for domains | ImprovMX",
+        "url": "https://improvmx.com/"
+      },
+      {
+        "title": "JSON Resume",
+        "url": "https://jsonresume.org/"
+      },
+      {
+        "title": "EmojiCopy | Simple emoji copy and paste by EmojiOne™",
+        "url": "https://www.emojicopy.com/"
+      },
+      {
+        "title": "Save It Offline - Save Videos, Images & Flash Media Offline",
+        "url": "http://www.saveitoffline.com/"
+      },
+      {
+        "title": "Font Awesome",
+        "url": "https://fontawesome.com/"
+      },
+      {
+        "title": "TSS Saver - 1Conan | SHSH2 Blobs Saver (1C644C08F3C02E)",
+        "url": "https://tsssaver.1conan.com/"
+      },
+      {
+        "title": "repl.it - Online REPL, Compiler & IDE",
+        "url": "https://repl.it/"
+      },
+      {
+        "title": "Tigrenator | Calculadora",
+        "url": "https://www.tigrenator.com/"
+      },
+      {
+        "title": "FreeDNS - Free DNS - Dynamic DNS - Static DNS subdomain and domain hosting",
+        "url": "https://freedns.afraid.org/"
+      },
+      {
+        "title": "Neocities: Create your own free website!",
+        "url": "https://neocities.org/"
+      },
+      {
+        "title": "JavaScript Event KeyCodes",
+        "url": "http://keycode.info/"
+      },
+      {
+        "title": "paralleltext.io",
+        "url": "http://paralleltext.io/"
+      },
+      {
+        "title": "Squoosh",
+        "url": "https://squoosh.app/"
+      },
+      {
+        "title": "Biblioteca Digital Hispánica",
+        "url": "http://www.bne.es/es/Catalogos/BibliotecaDigitalHispanica/Inicio/index.html"
+      },
+      {
+        "title": "Internet Archive",
+        "url": "https://archive.org/"
+      },
+      {
+        "title": "mobygratis",
+        "url": "http://www.mobygratis.com/"
+      },
+      {
+        "title": "freeSFX.co.uk",
+        "url": "http://www.freesfx.co.uk/"
+      },
+      {
+        "title": "Freesound.org",
+        "url": "https://freesound.org/"
+      },
+      {
+        "title": "Iconfinder",
+        "url": "https://www.iconfinder.com/"
+      },
+      {
+        "title": "YouTube Audio",
+        "url": "https://www.youtube.com/audiolibrary"
+      },
+      {
+        "title": "Free PSDs & Resources for Web Designers by Orman Clark",
+        "url": "http://www.premiumpixels.com/"
+      },
+      {
+        "title": "Subtle Patterns | Free textures for your next web project.",
+        "url": "http://subtlepatterns.com/"
+      },
+      {
+        "title": "365psd | Download a free PSD every day.",
+        "url": "http://365psd.com/"
+      },
+      {
+        "title": "Free Design Resources | Pixeden",
+        "url": "http://www.pixeden.com/free-design-web-resources"
+      },
+      {
+        "title": "Dribbble - Popular",
+        "url": "http://dribbble.com/"
+      },
+      {
+        "title": "Vectores populares - Vectores EPS, AI y SVG gratis",
+        "url": "http://www.freepik.es/vectores-populares"
+      },
+      {
+        "title": "Vectores gratis en Vectorizados.com",
+        "url": "http://www.vectorizados.com/"
+      },
+      {
+        "title": "Vectores Gratis | Los mejores vectores gratis en internet",
+        "url": "http://www.vectoresgratis.com/"
+      },
+      {
+        "title": "Vecteezy! - Download Free Vector Art, Stock Graphics & Images...",
+        "url": "http://www.vecteezy.com/"
+      },
+      {
+        "title": "VectorStock | Vector Art, Images, Graphics & Clipart",
+        "url": "http://www.vectorstock.com/"
+      },
+      {
+        "title": "Premium WordPress Themes, Plugins, Tips & Tutorials - WPExplorer",
+        "url": "http://www.wpexplorer.com/"
+      },
+      {
+        "title": "incompetech | Custom Production Music and also Graph Paper",
+        "url": "http://incompetech.com/"
+      },
+      {
+        "title": "Public Domain Music Downloads",
+        "url": "http://freepd.com/"
+      },
+      {
+        "title": "ZapSplat – Download free sound effects",
+        "url": "http://www.zapsplat.com/"
+      },
+      {
+        "title": "Download Free Stock Footage | Free Stock Video and HD video clips - Videvo.net",
+        "url": "http://www.videvo.net/"
+      },
+      {
+        "title": "Downloads | Videomaker.com",
+        "url": "http://www.videomaker.com/downloads"
+      },
+      {
+        "title": "Adobe Audition Downloadable Content: Sound Effects, Music Loops, and more.",
+        "url": "http://offers.adobe.com/en/na/audition/offers/audition_dlc.html"
+      },
+      {
+        "title": "Google Fonts",
+        "url": "https://fonts.google.com/"
+      },
+      {
+        "title": "Freebies - Reynante Martinez",
+        "url": "http://www.reynantemartinez.com/freebies.html"
+      },
+      {
+        "title": "Archive « CGCookie",
+        "url": "https://cgcookie.com/archive/"
+      },
+      {
+        "title": "templated.co",
+        "url": "https://templated.co/"
+      },
+      {
+        "title": "Links - StopMotionAnimation.com",
+        "url": "http://www.stopmotionanimation.com/page/links-2"
+      },
+      {
+        "title": "Biblioteca Digital Mundial",
+        "url": "https://www.wdl.org/es/"
+      },
+      {
+        "title": "Free Clip - Dissolve",
+        "url": "http://dissolve.com/free-clip"
+      },
+      {
+        "title": "Audio Network - Quality Production Music for TV, Film, Video & Advertising",
+        "url": "https://www.audionetwork.com/"
+      },
+      {
+        "title": "Iconshock - 2 million stock icons and 800 icon sets",
+        "url": "http://www.iconshock.com/"
+      },
+      {
+        "title": "SlidesCarnival - Free Powerpoint templates and Google Slides themes for presentations",
+        "url": "http://www.slidescarnival.com/"
+      },
+      {
+        "title": "Mapoteca - La biblioteca de mapas de Educ.ar.",
+        "url": "http://mapoteca.educ.ar/"
+      },
+      {
+        "title": "Handpicked free fonts for graphic designers with commercial-use licenses. | Font Squirrel",
+        "url": "http://www.fontsquirrel.com/"
+      },
+      {
+        "title": "Plantillas - Office.com",
+        "url": "http://office.microsoft.com/es-es/templates/"
+      },
+      {
+        "title": "Banco de Imágenes Gratis | FreeJPG",
+        "url": "http://www.freejpg.com.ar/"
+      },
+      {
+        "title": "FontStruct | Build, Share, Download Fonts",
+        "url": "http://fontstruct.com/"
+      },
+      {
+        "title": "KEYGENMUSiC - Music from keygens, crack, etc / Музыка из кейгенов, кряков, и т. д.",
+        "url": "http://www.keygenmusic.net/"
+      },
+      {
+        "title": "Big Bang Theory Transcripts",
+        "url": "http://bigbangtrans.wordpress.com/"
+      },
+      {
+        "title": "Icon Archive - Search 242,406 free icons, desktop icons, download icons, social icons, xp icons, vista icons",
+        "url": "http://www.iconarchive.com/"
+      },
+      {
+        "title": "Flash Kit, A Flash Developer Resource for Macromedia Flash 8 and MX Tutorials SWF FLA images clipart Sounds WAVS Animations Help and Support",
+        "url": "http://www.flashkit.com/soundfx/"
+      },
+      {
+        "title": "3D models, materials, scenes and more for CINEMA 4D users",
+        "url": "http://www.c4dexchange.com/en/default.aspx"
+      },
+      {
+        "title": "Free Textures from TextureKing",
+        "url": "http://www.textureking.com/"
+      },
+      {
+        "title": "Textures library - free surfaces for 3ds Max, LightWave",
+        "url": "http://textures.forrest.cz/"
+      },
+      {
+        "title": "Textures for 3D, graphic design and Photoshop!",
+        "url": "https://www.textures.com/"
+      },
+      {
+        "title": "Textures | WebTreats ETC",
+        "url": "http://webtreats.mysitemyway.com/tag/textures/"
+      },
+      {
+        "title": "Noun Project - Icons for Everything",
+        "url": "https://thenounproject.com/"
+      },
+      {
+        "title": "Tools and Resources | Facebook Design",
+        "url": "https://facebook.design/toolsandresources/"
+      },
+      {
+        "title": "Colección de sonidos de Facebook",
+        "url": "https://www.facebook.com/sound/collection/?soundCollectionTab=sound_tracks"
+      },
+      {
+        "title": "Free 3D Models - Download Free 3D Models 3DExport",
+        "url": "https://3dexport.com/free-3d-models"
+      },
+      {
+        "title": "ccMixter",
+        "url": "http://ccmixter.org/"
+      },
+      {
+        "title": "Canal Encuentro",
+        "url": "http://www.encuentro.gov.ar/"
+      },
+      {
+        "title": "Reuters TV: Live Breaking News, US, World, Business, Finance",
+        "url": "https://www.reuters.tv/"
+      },
+      {
+        "title": "Contar",
+        "url": "https://www.cont.ar/"
+      },
+      {
+        "title": "Canal de la Ciudad | Buenos Aires Ciudad - Gobierno de la Ciudad Autónoma de Buenos Aires",
+        "url": "http://www.buenosaires.gob.ar/canaldelaciudad"
+      },
+      {
+        "title": "TV Pública",
+        "url": "http://www.tvpublica.com.ar/"
+      },
+      {
+        "title": "TECtv",
+        "url": "http://www.tectv.gob.ar/"
+      },
+      {
+        "title": "TeleDocumentales.com - Documentales online",
+        "url": "http://www.teledocumentales.com/"
+      },
+      {
+        "title": "Conectate - elegí, mirá y descargá",
+        "url": "http://www.conectate.gob.ar/"
+      },
+      {
+        "title": "TV Publica - Mediateca",
+        "url": "http://www.tvpublica.com.ar/tvpublica/mediateca"
+      },
+      {
+        "title": "Cienradios",
+        "url": "http://www.cienradios.com.ar/"
+      },
+      {
+        "title": "Cultura Musical",
+        "url": "http://www.culturamusical.com.ar/"
+      },
+      {
+        "title": "RadioUBA Universidad de Buenos Aires",
+        "url": "http://www.uba.ar/radiouba/"
+      },
+      {
+        "title": "Libre.fm",
+        "url": "https://libre.fm/"
+      },
+      {
+        "title": "Bundlephobia | find the cost of adding a npm package to your bundle",
+        "url": "https://bundlephobia.com/"
+      },
+      {
+        "title": "JSX Live Compiler",
+        "url": "https://jsx-live.now.sh/"
+      },
+      {
+        "title": "random a11y",
+        "url": "https://randoma11y.com/"
+      },
+      {
+        "title": "Oh, shit, git!",
+        "url": "https://ohshitgit.com/"
+      },
+      {
+        "title": "Colorable",
+        "url": "https://colorable.jxnblk.com/"
+      },
+      {
+        "title": "HTTP Status Codes — httpstatuses.com",
+        "url": "https://httpstatuses.com/"
+      },
+      {
+        "title": "iOS-factor",
+        "url": "https://ios-factor.com/"
+      },
+      {
+        "title": "edenor | Simulador de Consumo",
+        "url": "https://simulador.edenor.com/"
+      },
+      {
+        "title": "Remove Background from Image – remove.bg",
+        "url": "https://www.remove.bg/"
+      },
+      {
+        "title": "Two Factor Auth List",
+        "url": "https://twofactorauth.org/"
+      },
+      {
+        "title": "The Ultimate Relaxing Music Player | Calmy Leon",
+        "url": "https://calmyleon.com/"
+      },
+      {
+        "title": "Phishing Quiz",
+        "url": "https://phishingquiz.withgoogle.com/"
+      },
+      {
+        "title": "Tokimeki Unfollow ✨",
+        "url": "https://tokimeki-unfollow.glitch.me/"
+      },
+      {
+        "title": "Webtask | Make serverless endpoints",
+        "url": "https://webtask.io/"
+      },
+      {
+        "title": "This person doesn't exist",
+        "url": "https://thispersondoesnotexist.com/"
+      },
+      {
+        "title": "Thimble by Mozilla - An online code editor for learners & educators.",
+        "url": "https://thimble.mozilla.org/"
+      },
+      {
+        "title": "DOGTV Live Channel VDMS",
+        "url": "https://content.jwplatform.com//players//tGtVZ42B-B09K55zg.html"
+      },
+      {
+        "title": "Flags of all countries",
+        "url": "http://flagpedia.net/"
+      },
+      {
+        "title": "Fix My Speakers -| Eject water from your phone's speakers after getting it wet",
+        "url": "https://fixmyspeakers.com/"
+      },
+      {
+        "title": "Measure  |  web.dev",
+        "url": "https://web.dev/measure"
+      },
+      {
+        "title": "PageSpeed Insights",
+        "url": "https://developers.google.com/speed/pagespeed/insights/"
+      },
+      {
+        "title": "Remote Jobs: Programming, Design, Marketing, Support and more",
+        "url": "https://remotehub.io/"
+      },
+      {
+        "title": "Data Gif Maker",
+        "url": "https://datagifmaker.withgoogle.com/"
+      },
+      {
+        "title": "Tarifario diseño, Argentina",
+        "url": "http://tarifario.org/"
+      },
+      {
+        "title": "Thimble por Mozilla - Un editor online de código para alumnos y educadores.",
+        "url": "https://thimble.mozilla.org/es/"
+      },
+      {
+        "title": "Live Flight Tracker - Real-Time Flight Tracker Map | Flightradar24",
+        "url": "https://www.flightradar24.com/"
+      },
+      {
+        "title": "DataDrivenJS - simple, serverless service for building data-driven websites",
+        "url": "https://datadrivenjs.com/"
+      },
+      {
+        "title": "The Official Home of YIFY Movies Torrent Download - YTS",
+        "url": "https://yts.am/"
+      },
+      {
+        "title": "EZTV - TV Torrents Online Series Download | Official",
+        "url": "https://eztv.io/"
+      },
+      {
+        "title": "Download music, movies, games, software! The Pirate Bay - The galaxy's most resilient BitTorrent site",
+        "url": "https://thepiratebay.org/"
+      },
+      {
+        "title": "Download music, movies, games, software! The Pirate Bay - The galaxy's most resilient BitTorrent site",
+        "url": "https://thepiratebay3.org/"
+      },
+      {
+        "title": "TGx:Home",
+        "url": "https://torrentgalaxy.org/"
+      },
+      {
+        "title": "RARBG Torrents , filmi , download",
+        "url": "https://rarbggo.org/torrents.php"
+      },
+      {
+        "title": "A new image format for the Web  |  WebP  |  Google Developers",
+        "url": "https://developers.google.com/speed/webp/"
+      },
+      {
+        "title": "Git History",
+        "url": "https://githistory.xyz/"
+      },
+      {
+        "title": "Discover Quickly",
+        "url": "https://discoverquickly.com/"
+      },
+      {
+        "title": "Similarsites.com - Easily Find Similar Websites",
+        "url": "https://www.similarsites.com/"
+      },
+      {
+        "title": "Neave.TV - Television without context",
+        "url": "https://neave.tv/"
+      },
+      {
+        "title": "Zachary Seguin Music: an Apple Music web player",
+        "url": "https://music.zacharyseguin.ca/"
+      },
+      {
+        "title": "FareCompare | Flight Comparison, Compare Flight Prices & Airline Tickets - FareCompare",
+        "url": "https://www.farecompare.com/"
+      },
+      {
+        "title": "Transcribe - transcription software for converting audio to text",
+        "url": "https://transcribe.wreally.com/"
+      },
+      {
+        "title": "Image Resizer to Resize and Crop Images Online for Free",
+        "url": "https://imageresize.org/"
+      },
+      {
+        "title": "Soundiiz - Transfer playlists and favorites between streaming services",
+        "url": "https://soundiiz.com/"
+      },
+      {
+        "title": "STAMP - Move to Apple Music, Spotify, Google Music",
+        "url": "https://freeyourmusic.com/"
+      },
+      {
+        "title": "Transfer Playlists Between Music Services! 100% free | Tune My Music",
+        "url": "https://www.tunemymusic.com/"
+      },
+      {
+        "title": "Exportify",
+        "url": "https://rawgit.com/watsonbox/exportify/master/exportify.html"
+      },
+      {
+        "title": "Playlist Converter - Convert your music playlists",
+        "url": "http://www.playlist-converter.net/#/"
+      },
+      {
+        "title": "Spotlistr - Convert Anything To A Spotify Playlist",
+        "url": "https://www.spotlistr.com/"
+      },
+      {
+        "title": "Instagram Fonts Generator (𝓬𝓸𝓹𝔂 𝕒𝕟𝕕 𝓅𝒶𝓈𝓉𝑒) ― IGFonts.io",
+        "url": "https://igfonts.io/"
+      },
+      {
+        "title": "Cool Fancy Text Generator - Cool Fonts & Stylish Letters, Symbols 😍",
+        "url": "https://coolsymbol.com/cool-fancy-text-generator.html"
+      },
+      {
+        "title": "NUKEMAP",
+        "url": "https://nuclearsecrecy.com/nukemap/"
+      },
+      {
+        "title": "b64.io - image optimisation & base64 encode",
+        "url": "http://b64.io/"
+      },
+      {
+        "title": "Image to base64 data-URI converter",
+        "url": "https://websemantics.uk/tools/image-to-data-uri-converter/"
+      },
+      {
+        "title": "Base64 File Encoder",
+        "url": "http://jpillora.com/base64-encoder/"
+      },
+      {
+        "title": "Minecraft Classic",
+        "url": "https://classic.minecraft.net/?join=evFS3DoH6-3mMX2n"
+      }
+    ]
+  },
+  {
+    "title": "Software",
+    "items": [
+      {
+        "title": "7-Zip | 7-Zip is a file archiver with a high compression ratio.",
+        "url": "https://www.7-zip.org/"
+      },
+      {
+        "title": "Adobe | Soluciones de creatividad, marketing y gestión de documentos.",
+        "url": "https://www.adobe.com/"
+      },
+      {
+        "title": "Adobe Spark",
+        "url": "https://spark.adobe.com/"
+      },
+      {
+        "title": "Adobe Story",
+        "url": "https://story.adobe.com/es-es/index.html"
+      },
+      {
+        "title": "Advanced Skeleton | Maya Rigging Tools",
+        "url": "http://www.animationstudios.com.au/#!advanced-skeleton/n0co2"
+      },
+      {
+        "title": "Affinity Designer | Professional graphic design software.",
+        "url": "https://affinity.serif.com/en-us/designer/"
+      },
+      {
+        "title": "Affinity Photo | Professional photo editing software.",
+        "url": "https://affinity.serif.com/en-us/photo/"
+      },
+      {
+        "title": "AIMP | Free Audio Player.",
+        "url": "http://www.aimp.ru/"
+      },
+      {
+        "title": "Ajenti Server Admin Panel",
+        "url": "http://ajenti.org/"
+      },
+      {
+        "title": "Amazon Kindle Previewer",
+        "url": "https://www.amazon.es/gp/feature.html?docId=1000590863"
+      },
+      {
+        "title": "Amazon KindleGen",
+        "url": "https://www.amazon.es/gp/feature.html?docId=1000590863"
+      },
+      {
+        "title": "Ampache - Music Streaming Server",
+        "url": "http://ampache.org/"
+      },
+      {
+        "title": "Android Studio and SDK Tools",
+        "url": "https://developer.android.com/studio/index.html"
+      },
+      {
+        "title": "Animation Pipeline | On Time & On Budget",
+        "url": "http://www.animationstudios.com.au/#!animation-pipeline/var0j"
+      },
+      {
+        "title": "Apache OpenOffice | The Free and Open Productivity Suite.",
+        "url": "http://www.openoffice.org/"
+      },
+      {
+        "title": "AppCleaner",
+        "url": "https://freemacsoft.net/appcleaner/"
+      },
+      {
+        "title": "ardour - the digital audio workstation",
+        "url": "https://ardour.org/"
+      },
+      {
+        "title": "Ares Galaxy | P2P File Sharing since 2002. Downloading Files made easy.",
+        "url": "https://aresgalaxy.io/"
+      },
+      {
+        "title": "arRsync",
+        "url": "http://arrsync.sourceforge.net/"
+      },
+      {
+        "title": "asciinema | Record and share your terminal sessions, the right way",
+        "url": "https://asciinema.org/"
+      },
+      {
+        "title": "ASIO4ALL | Universal ASIO Driver For WDM Audio.",
+        "url": "http://www.asio4all.org/"
+      },
+      {
+        "title": "Atom | Atom is a text editor that's modern, approachable, yet hackable to the core—a tool you can customize to do anything but also use productively without ever touching a config file.",
+        "url": "https://atom.io/"
+      },
+      {
+        "title": "aTube Catcher | Descarga Tus Videos Favoritos!",
+        "url": "http://www.atube.me/"
+      },
+      {
+        "title": "Auctor | Guarda y reproduce el contenido multimedia (videos, música, series de tv, películas) de muchos sitios populares como youtube, eztv, yts, animeflv, goear entre otros",
+        "url": "http://www.auctor.tv/"
+      },
+      {
+        "title": "Audacity | A free multi-track audio editor and recorder.",
+        "url": "https://www.audacityteam.org/"
+      },
+      {
+        "title": "Autodesk | 3D Design, Engineering & Entertainment Software.",
+        "url": "https://www.autodesk.com/"
+      },
+      {
+        "title": "AutoHotkey",
+        "url": "https://www.autohotkey.com/"
+      },
+      {
+        "title": "AxCrypt | Password Protect Files With Strong Encryption.",
+        "url": "https://www.axcrypt.net/"
+      },
+      {
+        "title": "Backuptrans Android iPhone SMS Transfer + | Manage SMS for both your Android and iPhone device or to transfer SMS between Android and iPhone.",
+        "url": "http://www.backuptrans.com/android-iphone-sms-transfer-plus.html"
+      },
+      {
+        "title": "Backuptrans Android iPhone WhatsApp Transfer + | Manage WhatsApp Chat History for your Android/iPhone devices or to transfer WhatsApp Messages between Android and iPhone.",
+        "url": "http://www.backuptrans.com/android-iphone-whatsapp-transfer-plus.html"
+      },
+      {
+        "title": "Bacon Root Toolkit v1.0.3 | Unlocking, rooting, relocking and unrooting simplified! (and much more!)",
+        "url": "http://www.wugfresh.com/brt/"
+      },
+      {
+        "title": "Bitcoin Full node ROKOS - for Raspberry Pi, Pine64+ and IoT Devices + OK Cryptocurrency",
+        "url": "https://rokos.space/"
+      },
+      {
+        "title": "Bitmessage",
+        "url": "https://bitmessage.org/wiki/Main_Page"
+      },
+      {
+        "title": "BitTorrent | Download large files with the easy-to-use BitTorrent client. Enjoy fast speeds, a simple interface, powerful options and more.",
+        "url": "https://www.bittorrent.com/"
+      },
+      {
+        "title": "BlackBerry Desktop | BlackBerry software for your computer and tablet.",
+        "url": "https://global.blackberry.com/en/software/desktop/overview"
+      },
+      {
+        "title": "Blackmagic DaVinci Resolve | Professional non-linear editing with Hollywood's most powerful color corrector!",
+        "url": "https://www.blackmagicdesign.com/products/davinciresolve/"
+      },
+      {
+        "title": "Blackmagic Fusion | The world’s most advanced visual effects and motion graphics solution!",
+        "url": "https://www.blackmagicdesign.com/products/fusion"
+      },
+      {
+        "title": "Blender | Blender is the free and open source 3D creation suite. It supports the entirety of the 3D pipeline—modeling, rigging, animation, simulation, rendering, compositing and motion tracking, even video editing and game creation.",
+        "url": "https://www.blender.org/"
+      },
+      {
+        "title": "Borg Documentation — Borg - Deduplicating Archiver 1.1.2 documentation",
+        "url": "https://borgbackup.readthedocs.io/en/stable/"
+      },
+      {
+        "title": "Brackets | A modern, open source text editor that understands web design.",
+        "url": "http://brackets.io/"
+      },
+      {
+        "title": "BunsenLabs Linux",
+        "url": "https://www.bunsenlabs.org/"
+      },
+      {
+        "title": "calibre - E-book management",
+        "url": "https://calibre-ebook.com/"
+      },
+      {
+        "title": "Calma - Ayuda en tus Momentos de Crisis",
+        "url": "http://www.appcalma.com/"
+      },
+      {
+        "title": "CamStudio | CamStudio is able to record all screen and audio activity on your computer and create industry-standard AVI video files and using its built-in SWF Producer can turn those AVIs into lean, mean, bandwidth-friendly Streaming Flash videos (SWFs).",
+        "url": "http://camstudio.org/"
+      },
+      {
+        "title": "Caterpillar | Studying languages has never been more fun and effective. Caterpillar turns any video into a language course!",
+        "url": "https://www.caterpillarapp.tv/"
+      },
+      {
+        "title": "ChaletOS",
+        "url": "https://sites.google.com/site/chaletoslinux/home"
+      },
+      {
+        "title": "Chromium | Chromium is an open-source browser project that aims to build a safer, faster, and more stable way for all Internet users to experience the web.",
+        "url": "https://www.chromium.org/Home"
+      },
+      {
+        "title": "Chunky",
+        "url": "http://chunky.llbit.se/"
+      },
+      {
+        "title": "Colloquy: IRC, SILC & ICB Client",
+        "url": "http://colloquy.info/"
+      },
+      {
+        "title": "Composer",
+        "url": "https://getcomposer.org/"
+      },
+      {
+        "title": "CrashPlan | CrashPlan backup software offers the best way to back up and store personal, business & enterprise data securely - offsite, onsite & online in the Cloud.",
+        "url": "https://www.crashplan.com/en-us/"
+      },
+      {
+        "title": "Cryptomator: Free Cloud Encryption for Dropbox & Others",
+        "url": "https://cryptomator.org/"
+      },
+      {
+        "title": "Cydia Impactor",
+        "url": "http://www.cydiaimpactor.com/"
+      },
+      {
+        "title": "darktable | darktable is an open source photography workflow application and raw developer. A virtual lighttable and darkroom for photographers. It manages your digital negatives in a database, lets you view them through a zoomable lighttable and enables",
+        "url": "http://www.darktable.org/"
+      },
+      {
+        "title": "DB Browser for SQLite | DB Browser for SQLite is a high quality, visual, open source tool to create, design, and edit database files compatible with SQLite. It is for users and developers wanting to create databases, search, and edit data. It uses a famil",
+        "url": "http://sqlitebrowser.org/"
+      },
+      {
+        "title": "DBEdit 2 | DBEdit 2 is a database editor, suitable as front-end for all your relational databases. Connects to Oracle, DB2, MySQL and many other databases.",
+        "url": "http://dbedit2.sourceforge.net/"
+      },
+      {
+        "title": "DeDRM Tools - DRM removal for ebooks for calibre plugin",
+        "url": "https://apprenticealf.wordpress.com/"
+      },
+      {
+        "title": "Deepin Technology Community",
+        "url": "https://www.deepin.org/en/"
+      },
+      {
+        "title": "DietPi - Lightweight justice for your SBC",
+        "url": "http://dietpi.com/#noAction"
+      },
+      {
+        "title": "DiffMerge",
+        "url": "https://sourcegear.com/diffmerge/"
+      },
+      {
+        "title": "Download Broville v11 - A fully detailed Minecraft sandbox city map",
+        "url": "http://oldshoes.ca/broville"
+      },
+      {
+        "title": "Dragonframe | The premier image capture software for stop motion animation.",
+        "url": "https://www.dragonframe.com/"
+      },
+      {
+        "title": "DropSync 3 - Mudflat Software",
+        "url": "http://mudflatsoftware.com/"
+      },
+      {
+        "title": "Echosync | The simple and efficient tool to synchronize your folders.",
+        "url": "http://www.luminescence-software.org/en/echosync.html"
+      },
+      {
+        "title": "Electron | Build cross platform desktop apps with JavaScript, HTML, and CSS.",
+        "url": "https://electronjs.org/"
+      },
+      {
+        "title": "Electrum Bitcoin Wallet",
+        "url": "https://electrum.org/"
+      },
+      {
+        "title": "Endless OS | Endless Computers",
+        "url": "https://endlessos.com/es/"
+      },
+      {
+        "title": "Etcher",
+        "url": "https://etcher.io/"
+      },
+      {
+        "title": "FakeApp",
+        "url": "https://www.fakeapp.org/"
+      },
+      {
+        "title": "FileZilla | FileZilla, the free FTP solution. Both a client and a server are available. FileZilla is open source software distributed free of charge under the terms of the GNU General Public License.",
+        "url": "https://filezilla-project.org/"
+      },
+      {
+        "title": "Final Draft | #1-Selling Screenwriting Software.",
+        "url": "https://www.finaldraft.com/"
+      },
+      {
+        "title": "FL Studio | A complete software music production environment or Digital Audio Workstation (DAW). Representing more than 18 years of innovative developments it has everything you need in one package to compose, arrange, record, edit, mix and master profess",
+        "url": "https://www.image-line.com/flstudio/"
+      },
+      {
+        "title": "Floow.tv - Vivimos el cine",
+        "url": "http://floow.tv/"
+      },
+      {
+        "title": "fre:ac | fre:ac is a free audio converter and CD ripper with support for various popular formats and encoders. It currently converts between MP3, MP4/M4A, WMA, Ogg Vorbis, FLAC, AAC, WAV and Bonk formats.",
+        "url": "https://www.freac.org/"
+      },
+      {
+        "title": "FreeDOS | The FreeDOS Project",
+        "url": "http://www.freedos.org/"
+      },
+      {
+        "title": "FreeFileSync | FreeFileSync is a free Open Source software that helps you synchronize files and synchronize folders for Windows, Linux and macOS. It is designed to save your time setting up and running backup jobs while having nice visual feedback along t",
+        "url": "https://freefilesync.org/"
+      },
+      {
+        "title": "freeFTPd | freeFTPd is a FTP/FTPS/SFTP server that enables user to access remote files over TCP/IP network such as Internet. Unlike FTP, FTPS and SFTP protocols provide security and strong encryption of data - great for insecure network.",
+        "url": "http://www.freesshd.com/"
+      },
+      {
+        "title": "FreeNAS Storage Operating System | Open Source - FreeNAS - Open Source Storage Operating System",
+        "url": "http://www.freenas.org/"
+      },
+      {
+        "title": "freenode",
+        "url": "https://freenode.net/"
+      },
+      {
+        "title": "FUSE for macOS",
+        "url": "https://osxfuse.github.io/"
+      },
+      {
+        "title": "Gephi - The Open Graph Viz Platform",
+        "url": "https://gephi.org/"
+      },
+      {
+        "title": "GIMP | GIMP is a cross-platform image editor available for GNU/Linux, OS X, Windows and more operating systems. It is free software, you can change its source code and distribute your changes. Whether you are a graphic designer, photographer, illustrator,",
+        "url": "https://www.gimp.org/"
+      },
+      {
+        "title": "Git",
+        "url": "https://git-scm.com/"
+      },
+      {
+        "title": "Git GUI for Windows, Mac & Linux | GitKraken",
+        "url": "https://www.gitkraken.com/"
+      },
+      {
+        "title": "GitHub Desktop | Simple collaboration from your desktop",
+        "url": "https://desktop.github.com/"
+      },
+      {
+        "title": "Gmac",
+        "url": "https://sourceforge.net/projects/gmaclinux/"
+      },
+      {
+        "title": "GnuCash | Free Accounting Software",
+        "url": "https://www.gnucash.org/"
+      },
+      {
+        "title": "Google Chrome | Un navegador web rápido y gratuito. Un navegador para tu ordenador, tu teléfono y tu tablet,",
+        "url": "https://www.google.com/chrome/"
+      },
+      {
+        "title": "Google Web Designer",
+        "url": "https://www.google.com/webdesigner/"
+      },
+      {
+        "title": "goPanel » Web Hosting Control Panel to manage unlimited linux servers",
+        "url": "http://gopanel.io/"
+      },
+      {
+        "title": "GParted -- A free application for graphically managing disk device partitions",
+        "url": "https://gparted.sourceforge.io/"
+      },
+      {
+        "title": "GPG Suite",
+        "url": "https://gpgtools.org/"
+      },
+      {
+        "title": "gPodder | Media aggregator and podcast client. gPodder is a simple, open source podcast client written in Python using GTK+. In development since 2005 with a proven, mature codebase.",
+        "url": "https://gpodder.github.io/"
+      },
+      {
+        "title": "Greenshot | Greenshot is the most awesome tool for making screenshots you can get on your Windows PC.",
+        "url": "http://getgreenshot.org/"
+      },
+      {
+        "title": "Grsync rsync GUI interface frontend for Linux, Windows and Mac OS X",
+        "url": "http://www.opbyte.it/grsync/"
+      },
+      {
+        "title": "HandBrake: Open Source Video Transcoder",
+        "url": "https://handbrake.fr/"
+      },
+      {
+        "title": "Home | Matrix.org",
+        "url": "https://matrix.org/"
+      },
+      {
+        "title": "Home of LibreCAD, 2D-CAD",
+        "url": "http://librecad.org/cms/home.html"
+      },
+      {
+        "title": "Homebrew | The missing package manager for macOS",
+        "url": "https://brew.sh/"
+      },
+      {
+        "title": "HTTrack | It allows you to download a World Wide Web site from the Internet to a local directory, building recursively all directories, getting HTML, images, and other files from the server to your computer.",
+        "url": "http://www.httrack.com/"
+      },
+      {
+        "title": "iFunbox | The File and App Management Tool for iPhone, iPad & iPod Touch. It's available on Windows and Mac OSX, ... and It's Free !",
+        "url": "http://www.i-funbox.com/"
+      },
+      {
+        "title": "ImportExportTools",
+        "url": "https://freeshell.de/~kaosmos/importexporttools-en.html"
+      },
+      {
+        "title": "Inkscape | Whether you are an illustrator, designer, web designer or just someone who needs to create some vector imagery, Inkscape is for you!",
+        "url": "https://inkscape.org/en/"
+      },
+      {
+        "title": "iPhone / iPod Touch Backup Extractor | This application converts the iPhone / iPod Touch backups that are created by iTunes into readily usable Mac OS X files. It is designed to run on Mac OS X 10.5 upwards.",
+        "url": "http://supercrazyawesome.com/"
+      },
+      {
+        "title": "iPhone Backup Browser | Windows. You can download a customized build of iPhone Backup Browser suitable for extraction of ChatStorage.sqlite from latest iOS Whatsapp. It's completely free, open-source and able to extract all your media too.",
+        "url": "https://www.wazzapmigrator.com/iphone-backup-browser-custom-build"
+      },
+      {
+        "title": "Irssi",
+        "url": "https://irssi.org/"
+      },
+      {
+        "title": "iTerm2 - macOS Terminal Replacement",
+        "url": "http://www.iterm2.com/index.html"
+      },
+      {
+        "title": "iTunes | iTunes is the best way to organize and enjoy the music, movies, and TV shows you already have — and shop for the ones you want to get. Enjoy all the entertainment iTunes has to offer on your Mac and PC.",
+        "url": "https://www.apple.com/itunes/"
+      },
+      {
+        "title": "JDownloader | Es una plataforma de código abierto escrita completamente en Java, diseñado para simplificar la descarga de archivos de servidores como Rapidshare.com o Megaupload.com, no solo para usuarios con cuenta Premium sino también para los de cue",
+        "url": "http://jdownloader.org/"
+      },
+      {
+        "title": "Jitsi",
+        "url": "https://jitsi.org/"
+      },
+      {
+        "title": "Johnny-Five: The JavaScript Robotics & IoT Platform",
+        "url": "http://johnny-five.io/"
+      },
+      {
+        "title": "Juice | Juice is a media aggregator that automatically downloads files to your computer or portable device, leaving you 'one-click-away' from latest media. Based on the iPodder idea of Adam Curry.",
+        "url": "http://juicereceiver.sourceforge.net/"
+      },
+      {
+        "title": "Kalabox. Be Happy.",
+        "url": "http://www.kalabox.io/"
+      },
+      {
+        "title": "Kali Linux | Penetration Testing and Ethical Hacking Linux Distribution",
+        "url": "https://www.kali.org/"
+      },
+      {
+        "title": "Kap - Capture your screen",
+        "url": "https://getkap.co/"
+      },
+      {
+        "title": "KeeWeb",
+        "url": "https://keeweb.info/"
+      },
+      {
+        "title": "Keka - el compresor de archivos para macOS",
+        "url": "http://www.kekaosx.com/es/"
+      },
+      {
+        "title": "KingRoot | La mejor herramienta de un clic Root Android APK/ Software.",
+        "url": "https://kingroot.net/"
+      },
+      {
+        "title": "KiwiIRC - The webIRC client",
+        "url": "https://kiwiirc.com/"
+      },
+      {
+        "title": "Kodi | Kodi® (formerly known as XBMC™) is an award-winning free and open source (GPL) software media center for playing videos, music, pictures, games, and more. Kodi runs on Linux, OS X, Windows, iOS, and Android, featuring a 10-foot user interface fo",
+        "url": "https://kodi.tv/"
+      },
+      {
+        "title": "Koken - Creative website publishing",
+        "url": "http://koken.me/"
+      },
+      {
+        "title": "Krita | Digital Painting. Creative Freedom.",
+        "url": "https://krita.org/es/"
+      },
+      {
+        "title": "Let's Encrypt - Free SSL/TLS Certificates",
+        "url": "https://letsencrypt.org/"
+      },
+      {
+        "title": "LightWave 3D | LightWave 3D combines a state-of-the-art renderer with powerful, intuitive modeling, and animation tools. Tools that may cost extra in other professional 3D applications are part of the product package, including 999 free cross-platform ren",
+        "url": "https://www.lightwave3d.com/"
+      },
+      {
+        "title": "Mac OS X Backup Utility - David Waring",
+        "url": "https://www.davidwaring.net/projects/backup.html"
+      },
+      {
+        "title": "Magic Lantern | Firmware addon for Canon DSLR cameras, providing enhanced functionality for photographers and videographers.",
+        "url": "https://www.magiclantern.fm/"
+      },
+      {
+        "title": "magic-device-tool | A simple and feature full batch tool to handle installing/replacing Operating Systems (Ubuntu Phone / Ubuntu Touch, Android, LineageOS, Maru OS, Sailfish OS and Phoenix OS) on your mobile devices.",
+        "url": "https://github.com/MariusQuabeck/magic-device-tool"
+      },
+      {
+        "title": "MakeHuman | Open Source tool for making 3D Characters.",
+        "url": "http://www.makehumancommunity.org/"
+      },
+      {
+        "title": "Manjaro Linux",
+        "url": "https://manjaro.org/"
+      },
+      {
+        "title": "Manuel Bastioni laboratory | open source 3d software, 3d human models, 3d innovation.",
+        "url": "http://www.manuelbastioni.com/"
+      },
+      {
+        "title": "MAXON Cinebench | CINEBENCH is a real-world cross platform test suite that evaluates your computer's performance capabilities.",
+        "url": "https://www.maxon.net/en/products/cinebench/"
+      },
+      {
+        "title": "MAXON Cinema 4D | Easy to learn and extremely powerful: Cinema 4D is the perfect package for all 3D artists who want achieve breathtaking results fast and hassle-free. Beginners and seasoned professionals alike can take advantage of Cinema 4D’s wide ran",
+        "url": "https://www.maxon.net/en/products/cinema-4d/overview/"
+      },
+      {
+        "title": "Media Player Classic - Home Cinema | MPC-HC is an extremely light-weight, open source media player for Windows®. It supports all common video and audio file formats available for playback. We are 100% spyware free, there are no advertisements or toolbars",
+        "url": "https://mpc-hc.org/"
+      },
+      {
+        "title": "MediaWiki",
+        "url": "https://www.mediawiki.org/wiki/MediaWiki"
+      },
+      {
+        "title": "Metatogger | The new generation of tag editor.",
+        "url": "http://www.luminescence-software.org/en/metatogger.html"
+      },
+      {
+        "title": "Microsoft Office | Productivity tools for home & office.",
+        "url": "https://www.office.com/"
+      },
+      {
+        "title": "Mixcraft | Mixcraft is The Musician's DAW - the ideal application for creating professional quality songs, mixes, and videos with ease. See it in action here:",
+        "url": "https://www.acoustica.com/mixcraft/"
+      },
+      {
+        "title": "Mobile Mouse | Turn your iPhone, iPad, or Apple Watch into a Remote for your computer.",
+        "url": "http://mobilemouse.com/"
+      },
+      {
+        "title": "Money Manager EX - Home",
+        "url": "https://www.moneymanagerex.org/"
+      },
+      {
+        "title": "MonkeyJam | MonkeyJam is a digital penciltest and stopmotion animation program. It is designed to let you capture images from a webcam, camcorder, or scanner and assemble them as separate frames of an animation.",
+        "url": "http://monkeyjam.org/"
+      },
+      {
+        "title": "Mozilla Thunderbird | Thunderbird is a free email application that’s easy to set up and customize - and it’s loaded with great features!",
+        "url": "https://www.thunderbird.net/"
+      },
+      {
+        "title": "Mp3tag | Mp3tag is a powerful and easy-to-use tool to edit metadata of audio files.",
+        "url": "https://www.mp3tag.de/en/index.html"
+      },
+      {
+        "title": "Mumble | Mumble is a voice chat application for groups. While it can be used for any kind of activity, it is primarily intended for gaming. It can be compared to programs like Ventrilo or TeamSpeak. People tend to simplify things, so when they talk about",
+        "url": "https://www.mumble.com/"
+      },
+      {
+        "title": "Mumble, the open source VoIP solution",
+        "url": "https://wiki.mumble.info/wiki/Main_Page"
+      },
+      {
+        "title": "MySQL Workbench",
+        "url": "https://www.mysql.com/products/workbench/"
+      },
+      {
+        "title": "Nanolinux",
+        "url": "https://sourceforge.net/projects/nanolinux/"
+      },
+      {
+        "title": "Native Instruments - Massive | MASSIVE is a sonic monster – the ultimate synth for basses and leads. The virtual-analog concept belies the contemporary, cutting-edge sound it generates. Clearly laid out and easy to use, MASSIVE gives you earth-shudderin",
+        "url": "https://www.native-instruments.com/en/products/komplete/synths/massive/"
+      },
+      {
+        "title": "Natron | Cross-platform open-source compositing software.",
+        "url": "https://natron.fr/"
+      },
+      {
+        "title": "Netatalk - Networking Apple Macintosh through Open Source",
+        "url": "http://netatalk.sourceforge.net/"
+      },
+      {
+        "title": "Netflix Party",
+        "url": "https://www.netflixparty.com/"
+      },
+      {
+        "title": "Nightingale | A beautiful interface with a wide range of supported audio formats, all with multi-platform support!",
+        "url": "https://getnightingale.com/"
+      },
+      {
+        "title": "NUKE | Powerful compositing, editorial & review.",
+        "url": "https://www.foundry.com/products/nuke"
+      },
+      {
+        "title": "NV Access",
+        "url": "https://www.nvaccess.org/"
+      },
+      {
+        "title": "Oh My Zsh",
+        "url": "http://ohmyz.sh/"
+      },
+      {
+        "title": "OnePlus One Toolkit by manudroid19 | This is a Graphic User Interface Toolkit for the OnePlus One. It will allow you to perform all the basic root actions for the OnePlus One easily.",
+        "url": "https://forum.xda-developers.com/oneplus-one/development/oneplus-one-toolkit-manudroid19-gui-t2807418"
+      },
+      {
+        "title": "Open Broadcaster Software | Home",
+        "url": "https://obsproject.com/"
+      },
+      {
+        "title": "Open Gapps | The Open GApps Project is an open-source effort to script the automatic generation of up-to-date Google Apps packages.",
+        "url": "https://opengapps.org/"
+      },
+      {
+        "title": "Open Subtitles MKV Player | Open Subtitles MKV Player is a freeware video player that automatically downloads a perfect matched subtitles for movies and tv series.",
+        "url": "http://www.opensubtitles.website/"
+      },
+      {
+        "title": "OpenEmu - Multiple Video Game System",
+        "url": "http://openemu.org/"
+      },
+      {
+        "title": "OpenShot Video Editor | Enjoy this video which showcases many of OpenShot's features: 3D animation, curve-based camera motion, compositing, transitions, audio mixing, and vector titles.",
+        "url": "https://www.openshot.org/"
+      },
+      {
+        "title": "Opera | Fast, secure, easy-to-use browser.",
+        "url": "https://www.opera.com/"
+      },
+      {
+        "title": "Origami Studio — Design Prototyping",
+        "url": "https://origami.design/"
+      },
+      {
+        "title": "Origin | Play great PC games and connect with your friends, all in one place.",
+        "url": "https://www.origin.com/"
+      },
+      {
+        "title": "OS Downloader | Download subtitles – easy, fast, precisely.",
+        "url": "http://osdownloader.org/"
+      },
+      {
+        "title": "OSx86 Project | InsanelyMac",
+        "url": "http://www.osx86project.org/"
+      },
+      {
+        "title": "oTranscribe",
+        "url": "http://otranscribe.com/"
+      },
+      {
+        "title": "Overcast",
+        "url": "https://overcast.fm/"
+      },
+      {
+        "title": "Paragon Driver | Seagate US",
+        "url": "https://www.seagate.com/support/software/paragon/"
+      },
+      {
+        "title": "PartedMagic - Partitioning, Cloning, Rescue, and Erasing.",
+        "url": "https://partedmagic.com/"
+      },
+      {
+        "title": "PDF Rider | DFRider is an utility for doing some simple manipulations to PDF documents.",
+        "url": "https://archive.codeplex.com/?p=pdfrider"
+      },
+      {
+        "title": "PDF Scissors | It's a tool to crop pdfs. Objective to create this, was to read pdf files (specially the scanned ones) easily in ebook readers, like kindle.",
+        "url": "https://sites.google.com/site/pdfscissors/"
+      },
+      {
+        "title": "PeaZip | PeaZip is free file archiver utility, based on Open Source technologies of 7-Zip, p7zip, FreeArc, PAQ, and PEA projects. This software deploys a powerful and complete file manager, featuring a wide set of data security functions: strong encryptio",
+        "url": "http://www.peazip.org/"
+      },
+      {
+        "title": "Pencil2D Animation - Opensource animation software",
+        "url": "https://www.pencil2d.org/"
+      },
+      {
+        "title": "Pidgin | The universal chat client.",
+        "url": "https://pidgin.im/"
+      },
+      {
+        "title": "Pivot Animator",
+        "url": "http://pivotanimator.net/"
+      },
+      {
+        "title": "Pixar&#39;s RenderMan®",
+        "url": "https://renderman.pixar.com/view/renderman"
+      },
+      {
+        "title": "Pixologic :: Sculptris",
+        "url": "http://www.pixologic.com/sculptris/"
+      },
+      {
+        "title": "Popcorn Time | Popcorn Time streams movies and TV shows from torrents.",
+        "url": "https://popcorntime.sh/"
+      },
+      {
+        "title": "Popcorn Time Community Edition | Official Popcorn Time Community Edition We are the little brother of (.sh) The Popcorn Time That you love and the only one maintained by the best community ever :)",
+        "url": "https://www.reddit.com/r/PopcornTimeCE/"
+      },
+      {
+        "title": "PostgreSQL | PostgreSQL is a powerful, open source object-relational database system. It has more than 15 years of active development and a proven architecture that has earned it a strong reputation for reliability, data integrity, and correctness. It run",
+        "url": "https://www.postgresql.org/"
+      },
+      {
+        "title": "Practice Mock Interviews & Coding Problems - Land Top Jobs | Pramp",
+        "url": "https://www.pramp.com/#/"
+      },
+      {
+        "title": "Python | Python is a programming language that lets you work quickly and integrate systems more effectively.",
+        "url": "https://www.python.org/"
+      },
+      {
+        "title": "QCAD - 2D CAD for Windows, Linux & Mac",
+        "url": "http://www.qcad.org/en/"
+      },
+      {
+        "title": "RawTherapee | RawTherapee es un programa de procesamiento de imágenes RAW multiplataforma, lanzado como software libre.",
+        "url": "http://rawtherapee.com/"
+      },
+      {
+        "title": "RealVNC | Remote Access Software for Desktop and Mobile",
+        "url": "https://www.realvnc.com/en/"
+      },
+      {
+        "title": "REDCINE-X PRO | For Motion. For Stills. REDCINE-X PRO provides an advanced coloring toolset, integrated timeline, and post effects collection in a professional, flexible environment for your 4K, 5K or 6K .R3D files. With a new look and feel, and advanced",
+        "url": "http://www.red.com/products/redcine-x-pro"
+      },
+      {
+        "title": "ReNamer | ReNamer is a very powerful and flexible file renaming tool, which offers all the standard renaming procedures, including prefixes, suffixes, replacements, case changes, as well as removing contents of brackets, adding number sequences, changing",
+        "url": "http://www.den4b.com/products/renamer"
+      },
+      {
+        "title": "RenderMan | Advanced Rendering Technology. Developed by Pixar for rendering animation and visual effects.",
+        "url": "https://renderman.pixar.com/"
+      },
+      {
+        "title": "Resilio Sync Home | Sync any file and folder to all your devices.",
+        "url": "https://www.resilio.com/individuals/"
+      },
+      {
+        "title": "rsync",
+        "url": "https://rsync.samba.org/"
+      },
+      {
+        "title": "Samsung Kies | Samsung Kies conecta su teléfono celular con el pc personal, facilitándole la sincronización de datos entre los dispositivos.",
+        "url": "https://www.samsung.com/ar/support/kies/"
+      },
+      {
+        "title": "Sandstorm | Sandstorm is a self-hostable web productivity suite.",
+        "url": "https://sandstorm.io/"
+      },
+      {
+        "title": "SEAL - Home Page",
+        "url": "http://sealsystem.sourceforge.net/"
+      },
+      {
+        "title": "Sejda PDF Desktop - Official Website",
+        "url": "https://www.sejda.com/desktop"
+      },
+      {
+        "title": "Sentora | Sentora is an open-source web hosting control panel built specifically to work on a variety of Linux distributions.",
+        "url": "http://www.sentora.org/"
+      },
+      {
+        "title": "Servo, the parallel browser engine",
+        "url": "https://servo.org/"
+      },
+      {
+        "title": "Shout — The self-hosted web IRC client",
+        "url": "http://shout-irc.com/"
+      },
+      {
+        "title": "Simplenote",
+        "url": "https://simplenote.com/"
+      },
+      {
+        "title": "SimSim | SimSim es un juego de simulación breve de gestión integral de una empresa industrial - comercial.",
+        "url": "http://luisvergani.com.ar/"
+      },
+      {
+        "title": "Sketch - The digital design toolkit",
+        "url": "https://www.sketchapp.com/"
+      },
+      {
+        "title": "Skype | Skype is for doing things together, whenever you’re apart. Skype’s text, voice and video make it simple to share experiences with the people that matter to you, wherever they are.",
+        "url": "https://www.skype.com/"
+      },
+      {
+        "title": "SmoothTeddy",
+        "url": "http://www-ui.is.s.u-tokyo.ac.jp/~takeo/java/smoothteddy/index.html"
+      },
+      {
+        "title": "Songbird | With a focus on fans, Songbird personalizes music content from the artists you love the most. Share your own photos with artists and other fans or discover new artists, all while listening to your music on your computer.",
+        "url": "http://getsongbird.net/"
+      },
+      {
+        "title": "Sonic Pi | The Live Coding Music Synth for Everyone",
+        "url": "https://sonic-pi.net/"
+      },
+      {
+        "title": "SourceTree | Free Git GUI for Mac and Windows",
+        "url": "https://www.sourcetreeapp.com/"
+      },
+      {
+        "title": "Space Engine – the universe simulator",
+        "url": "http://spaceengine.org/"
+      },
+      {
+        "title": "Spotify | With Spotify, it’s easy to find the right music for every moment – on your phone, your computer, your tablet and more.",
+        "url": "https://www.spotify.com/"
+      },
+      {
+        "title": "SQuirreL SQL Client Home Page",
+        "url": "http://squirrel-sql.sourceforge.net/"
+      },
+      {
+        "title": "sr.ht meta",
+        "url": "https://meta.sr.ht/"
+      },
+      {
+        "title": "SRWare Iron | The browser of the future - based on the free Sourcecode \"Chromium\" - without any problems at privacy and security.",
+        "url": "http://www.srware.net/"
+      },
+      {
+        "title": "Steam | The ultimate entertainment platform. Play, connect, create and more.",
+        "url": "https://store.steampowered.com/"
+      },
+      {
+        "title": "Storyboarder - The best and easiest way to storyboard. | Wonder Unit",
+        "url": "https://wonderunit.com/storyboarder/"
+      },
+      {
+        "title": "Stremio | Stremio is an app that helps you organize and instantly watch your favorite videos, movies, TV series and TV channels.",
+        "url": "http://www.stremio.com/"
+      },
+      {
+        "title": "Sublime Text | Sublime Text is a sophisticated text editor for code, markup and prose.",
+        "url": "http://www.sublimetext.com/"
+      },
+      {
+        "title": "Subtitle Edit | Subtitle Edit is a free (open source) editor for video subtitles - a subtitle editor :)",
+        "url": "http://www.nikse.dk/subtitleedit/"
+      },
+      {
+        "title": "Super Grub2 Disk",
+        "url": "https://www.supergrubdisk.org/super-grub2-disk/"
+      },
+      {
+        "title": "Syncthing",
+        "url": "https://syncthing.net/"
+      },
+      {
+        "title": "Synfig Studio | Open-source 2D animation software.",
+        "url": "https://www.synfig.org/"
+      },
+      {
+        "title": "Synthesia | A fun way to learn how to play the piano.",
+        "url": "https://www.synthesiagame.com/"
+      },
+      {
+        "title": "TagScanner | TagScanner is a powerful tool for organizing and managing your music collection. It can edit tags of most modern audio formats, supports ID3v1/v2, Vorbis comments, APEv2, WMA and MP4(iTunes) tags. You can rename files according to information",
+        "url": "https://www.xdlab.ru/en/"
+      },
+      {
+        "title": "Tails - Privacy for anyone anywhere",
+        "url": "https://tails.boum.org/"
+      },
+      {
+        "title": "TeamViewer | Remote support, remote access, customer request management and online collaboration software for Windows, Mac, Linux, Chrome OS, iOS, Android, Windows mobile, and BlackBerry.",
+        "url": "https://www.teamviewer.com/"
+      },
+      {
+        "title": "TechSmith Camtasia | Everything you need for stunning video. Bring in your footage or record a video of your screen, then use the simple video editor in Camtasia to create a high-quality video.",
+        "url": "https://www.techsmith.com/video-editor.html"
+      },
+      {
+        "title": "Teddy",
+        "url": "http://www-ui.is.s.u-tokyo.ac.jp/~takeo/teddy/teddy.htm"
+      },
+      {
+        "title": "Textual: IRC for macOS",
+        "url": "https://www.codeux.com/textual/"
+      },
+      {
+        "title": "THE FEMINIST LETTERS",
+        "url": "http://thefeministletters.com/"
+      },
+      {
+        "title": "The Lounge — Self-hosted web IRC client",
+        "url": "https://thelounge.github.io/"
+      },
+      {
+        "title": "The Unarchiver | Top Free Unarchiving Software for macOS",
+        "url": "https://theunarchiver.com/"
+      },
+      {
+        "title": "The Writer Zone",
+        "url": "http://thewriterzone.com/"
+      },
+      {
+        "title": "Time Adjuster | The best application to synchronize, repair and make other changes to DivX subtitle files!",
+        "url": "http://www.ireksoftware.com/ta/"
+      },
+      {
+        "title": "Tomighty",
+        "url": "http://tomighty.org/"
+      },
+      {
+        "title": "Tonebridge Guitar Effects on the Mac App Store",
+        "url": "https://itunes.apple.com/us/app/tonebridge-guitar-effects/id1263858588"
+      },
+      {
+        "title": "Tor Browser | The Tor software protects you by bouncing your communications around a distributed network of relays run by volunteers all around the world: it prevents somebody watching your Internet connection from learning what sites you visit, it preven",
+        "url": "https://www.torproject.org/projects/torbrowser.html"
+      },
+      {
+        "title": "Trelby | A free, multiplatform, feature-rich screenwriting program! Trelby is simple, fast and elegantly laid out to make screenwriting simple. It is infinitely configurable.",
+        "url": "https://www.trelby.org/"
+      },
+      {
+        "title": "TrueIP | TrueIP is a small program that runs in the system tray, monitoring your IP address(es).",
+        "url": "https://www.haztek-software.com/applications/network/trueip/"
+      },
+      {
+        "title": "TweetMyPC | TweetMyPC is a little software-application for Windows, written in VB.Net using the .Net-Framework v3.5 SP1, which allows you to control and access your computer from anywhere by simply sending a twitter-message with a special command as its c",
+        "url": "https://archive.codeplex.com/?p=tweetmypc"
+      },
+      {
+        "title": "TWRP | A custom recovery is used for installing custom software on your device. This custom software can include smaller modifications like rooting your device or even replacing the firmware of the device with a completely custom \"ROM\".",
+        "url": "https://twrp.me/"
+      },
+      {
+        "title": "UBOS - The Linux Distro for Personal Servers and Indie IoT Devices",
+        "url": "http://ubos.net/"
+      },
+      {
+        "title": "UBports",
+        "url": "https://ubports.com/"
+      },
+      {
+        "title": "UMPlayer | UMPlayer is a cross-platform multimedia player supporting many audio and video codecs and file formats as well as DVDs, VCDs, and various streaming protocols. It boasts many advanced features such as built-in subtitle search and YouTube player.",
+        "url": "https://sourceforge.net/projects/umplayer/"
+      },
+      {
+        "title": "Unetbootin | UNetbootin allows you to create bootable Live USB drives for Ubuntu and other Linux distributions without burning a CD.",
+        "url": "https://unetbootin.github.io/"
+      },
+      {
+        "title": "Unison File Synchronizer",
+        "url": "https://www.cis.upenn.edu/~bcpierce/unison/"
+      },
+      {
+        "title": "Universal Extractor | Universal Extractor is a program designed to decompress and extract files from any type of archive or installer, such as ZIP or RAR files, self-extracting EXE files, application installers, etc. Please note that Universal Extractor i",
+        "url": "https://www.legroom.net/software/uniextract"
+      },
+      {
+        "title": "Universal USB Installer | Universal USB Installer aka UUI is a Live Linux Bootable USB Creator that allows you to choose from a selection of Linux Distributions to put on your USB Flash Drive.",
+        "url": "http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/"
+      },
+      {
+        "title": "Unlocker | Unblock files and do other things that sometimes the PC is blocking and doesn't let you do anything.",
+        "url": "http://www.emptyloop.com/unlocker/"
+      },
+      {
+        "title": "Unreal Engine | Make awesome games and apps with Unreal Engine.",
+        "url": "https://www.unrealengine.com/"
+      },
+      {
+        "title": "VirtualBox | VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use. Presently, VirtualBox runs on Windows, Linux, Macintosh, and Solaris hosts and supports a large number of guest operating systems includ",
+        "url": "https://www.virtualbox.org/"
+      },
+      {
+        "title": "Visual Studio Code | Code editing. Redefined. Free. Open source. Runs everywhere.",
+        "url": "https://code.visualstudio.com/"
+      },
+      {
+        "title": "VitalSource Bookshelf | Access your course materials on iPad, Android, Kindle and Chromebook devices with VitalSource Bookshelf, the textbook e-reader that helps you read, study and learn brilliantly.",
+        "url": "https://bookshelf.vitalsource.com/"
+      },
+      {
+        "title": "VitalSource Converter | VitalSource Converter is tools remove DRM protection from VitalSource Bookshelf ebooks, it create a new non-DRM protection PDF file with 1-click, the new PDF file can read in Windows,Mac without limitation, share your ebook with fr",
+        "url": "https://www.ebook-converter.com/vitalsource-converter.htm"
+      },
+      {
+        "title": "Vivaldi | Vivaldi Web Browser is a free, fully customizable web browser. Feature rich, powerful, secure and fun!",
+        "url": "https://vivaldi.com/"
+      },
+      {
+        "title": "VLC Media Player | VLC es un reproductor multimedia libre y de código abierto multiplataforma y un «framework» que reproduce la mayoría de archivos multimedia, así como DVD, Audio CD, VCD y diversos protocolos de transmisión.",
+        "url": "http://www.videolan.org/vlc/"
+      },
+      {
+        "title": "VOX Mac Music Player: Best FLAC Player for Mac. iTunes Alternative.",
+        "url": "https://vox.rocks/mac-music-player"
+      },
+      {
+        "title": "Voxal Free & Easy-to-Use Real-Time Voice Changing Software",
+        "url": "http://www.nchsoftware.com/voicechanger/index.html"
+      },
+      {
+        "title": "vvvv - a multipurpose toolkit | vvvv",
+        "url": "https://vvvv.org/"
+      },
+      {
+        "title": "WazzapMigrator | WazzapMigrator: transfer your Whatsapp history from iPhone to Android",
+        "url": "https://www.wazzapmigrator.com/es/"
+      },
+      {
+        "title": "WeeChat, the extensible chat client",
+        "url": "https://weechat.org/"
+      },
+      {
+        "title": "Win32 Disk Imager | A tool for writing images to USB sticks or SD/CF cards.",
+        "url": "https://sourceforge.net/projects/win32diskimager/"
+      },
+      {
+        "title": "Winamp | The legendary Winamp Player allows you to listen to and manage your music library, podcasts, watch videos and listen to online radio. Its ease of use and features such support for most audio files, plug-ins, skins, music visualization and more ha",
+        "url": "http://www.winamp.com/"
+      },
+      {
+        "title": "WineHQ - Ejecuta aplicaciones de Windows en Linux, BSD, Solaris y macOS",
+        "url": "https://www.winehq.org/"
+      },
+      {
+        "title": "WinMerge | WinMerge is an Open Source differencing and merging tool for Windows. WinMerge can compare both folders and files, presenting differences in a visual text format that is easy to understand and handle.",
+        "url": "http://winmerge.org/"
+      },
+      {
+        "title": "WinRAR | WinRAR es un potente programa compresor y descompresor de datos multi-función desarrollado por RarLab, una herramienta indispensable para ahorar espacio de almacenamiento y tiempo de transmisión al enviar y recibir archivos a través de Interne",
+        "url": "https://www.winrar.es/"
+      },
+      {
+        "title": "XAMPP | XAMPP is a completely free, easy to install Apache distribution containing MariaDB, PHP, and Perl. The XAMPP open source package has been set up to be incredibly easy to install and to use.",
+        "url": "https://www.apachefriends.org/index.html"
+      },
+      {
+        "title": "Xcode - Apple Developer",
+        "url": "https://developer.apple.com/xcode/"
+      },
+      {
+        "title": "ZNC",
+        "url": "https://znc.in/"
+      },
+      {
+        "title": "Zulip",
+        "url": "https://zulip.org/"
+      },
+      {
+        "title": "Microsoft Visual Studio IDE | Fully-featured integrated development environment (IDE) for Android, iOS, macOS, web, and cloud",
+        "url": "https://visualstudio.microsoft.com/vs/"
+      },
+      {
+        "title": "Syncplay | Free software that synchronises media players so that faraway friends can watch videos together.",
+        "url": "https://syncplay.pl/"
+      },
+      {
+        "title": "WineBottler | Run Windows-based Programs on a Mac",
+        "url": "http://winebottler.kronenberg.org/"
+      },
+      {
+        "title": "Streamlabs | Open Broadcaster Software for Gamers",
+        "url": "https://streamlabs.com/"
+      },
+      {
+        "title": "1.1.1.1 | the Internet’s Fastest, Privacy-First DNS Resolver",
+        "url": "https://1.1.1.1/"
+      },
+      {
+        "title": "iTerm2 | macOS Terminal Replacement",
+        "url": "https://www.iterm2.com/"
+      },
+      {
+        "title": "Postman | API Development Environment",
+        "url": "https://www.getpostman.com/"
+      },
+      {
+        "title": "TIGSource",
+        "url": "https://www.tigsource.com/"
+      },
+      {
+        "title": "PokeMMO",
+        "url": "http://pokemmo.eu/"
+      },
+      {
+        "title": "TypingClub",
+        "url": "http://typingclub.com/"
+      },
+      {
+        "title": "Drop",
+        "url": "http://drop.notch.net/"
+      },
+      {
+        "title": "Pretentious Game",
+        "url": "http://armorgames.com/play/13225"
+      },
+      {
+        "title": "Wargaming.net",
+        "url": "http://na.wargaming.net/"
+      },
+      {
+        "title": "Leo’s Red Carpet Rampage",
+        "url": "http://redcarpetrampage.com/"
+      },
+      {
+        "title": "Game Of Bombs",
+        "url": "https://gameofbombs.com/landing"
+      },
+      {
+        "title": "Dueling Network",
+        "url": "http://www.duelingnetwork.com/"
+      },
+      {
+        "title": "Sci-Fi single-shard Sandbox game (MMORPG) | DUAL Universe",
+        "url": "http://www.dualthegame.com/"
+      },
+      {
+        "title": "Infinity: Battlescape",
+        "url": "https://inovaestudios.com/Battlescape"
+      },
+      {
+        "title": "Star Citizen - Roberts Space Industries",
+        "url": "https://robertsspaceindustries.com/getting-started"
+      },
+      {
+        "title": "CoolROM",
+        "url": "http://coolrom.com/"
+      },
+      {
+        "title": "Akinator",
+        "url": "http://es.akinator.com/#"
+      },
+      {
+        "title": "Robot Arena II Mods",
+        "url": "https://gametechmods.com/forums/index.php"
+      },
+      {
+        "title": "RetroArch",
+        "url": "http://www.retroarch.com/"
+      },
+      {
+        "title": "Pokemon Uranium",
+        "url": "http://pokemonuranium.org/"
+      },
+      {
+        "title": "PokeMMO - No Bullshit, Just Games",
+        "url": "https://pokemmo.eu/"
+      },
+      {
+        "title": "OASES by Armel Gibson, Dziff",
+        "url": "https://armelgibson.itch.io/oases"
+      },
+      {
+        "title": "no$gba - nocash gameboy advance / nintendo ds / dsi emulator",
+        "url": "http://problemkaputt.de/gba.htm"
+      },
+      {
+        "title": "Slender Game",
+        "url": "http://www.slendergame.com/"
+      },
+      {
+        "title": "ePSXe",
+        "url": "http://www.epsxe.com/"
+      },
+      {
+        "title": "DeSmuME",
+        "url": "http://desmume.org/"
+      },
+      {
+        "title": "Virtual Cubes Rubik's Cube | Instructions | Instructions",
+        "url": "http://www.randelshofer.ch/rubik/virtual_cubes/rubik/instructions/instructions.html"
+      },
+      {
+        "title": "League of Legends (LOL) | League of Legends es un juego en línea competitivo de ritmo frenético, que fusiona la velocidad y la intensidad de la estrategia en tiempo real (ETR) con elementos de juegos de rol.",
+        "url": "https://leagueoflegends.com/"
+      },
+      {
+        "title": "WolfQuest | Juega a ser un lobo.",
+        "url": "http://www.wolfquest.org/game_info.php"
+      },
+      {
+        "title": "Minecraft | Minecraft is a game about placing blocks and going on adventures. Explore randomly generated worlds and build amazing things from the simplest of homes to the grandest of castles.",
+        "url": "https://minecraft.net/es-es/"
+      },
+      {
+        "title": "hydra | LIVE CODING NETWORKED VISUALS",
+        "url": "https://hydra-editor-v1.glitch.me/"
+      },
+      {
+        "title": "Tidal | language for live coding patterns.",
+        "url": "https://tidalcycles.org/"
+      },
+      {
+        "title": "Spacemacs | Emacs advanced Kit focused on Evil",
+        "url": "http://spacemacs.org/"
+      },
+      {
+        "title": "SpaceVim | A community-driven vim distribution",
+        "url": "https://spacevim.org/"
+      },
+      {
+        "title": "Forestry.io | Static CMS for Hugo & Jekyll",
+        "url": "https://forestry.io/"
+      },
+      {
+        "title": "Hyper™",
+        "url": "https://hyper.is/"
+      },
+      {
+        "title": "Rufus | Cree unidades USB arrancables fácilmente",
+        "url": "https://rufus.ie/es_ES.html"
+      },
+      {
+        "title": "FreeNAS | Open Source Storage Operating System",
+        "url": "https://freenas.org/"
+      },
+      {
+        "title": "RunJS | Write and run JavaScript instantly",
+        "url": "https://projects.lukehaas.me/runjs/"
+      },
+      {
+        "title": "Brave Browser | Secure, Fast & Private Web Browser with Adblocker",
+        "url": "https://brave.com/"
+      },
+      {
+        "title": "Docker | Enterprise Container Platform",
+        "url": "https://www.docker.com/"
+      },
+      {
+        "title": "Oni | Modern Modal Editing",
+        "url": "https://www.onivim.io/"
+      },
+      {
+        "title": "Authy | Two-factor Authentication (2FA) App & Guides",
+        "url": "https://authy.com/"
+      },
+      {
+        "title": "Processing.org",
+        "url": "https://processing.org/"
+      },
+      {
+        "title": "cRARk | freeware RAR password recovery (Win, Linux, Mac, GPU)",
+        "url": "http://www.crark.net/"
+      },
+      {
+        "title": "HJSplit | free file splitting software for Windows, Linux and other platforms",
+        "url": "http://www.hjsplit.org/"
+      },
+      {
+        "title": "Mark Text",
+        "url": "https://marktext.github.io/website/"
+      },
+      {
+        "title": "Terminalizer",
+        "url": "https://terminalizer.com/"
+      },
+      {
+        "title": "C* Music Player",
+        "url": "https://cmus.github.io/"
+      },
+      {
+        "title": "MuseScore | Free music composition and notation software",
+        "url": "https://musescore.org/en"
+      },
+      {
+        "title": "Source Filmmaker",
+        "url": "http://www.sourcefilmmaker.com/"
+      },
+      {
+        "title": "OpenToonz",
+        "url": "https://opentoonz.github.io/"
+      },
+      {
+        "title": "Desmos | Beautiful, Free Math",
+        "url": "https://www.desmos.com/"
+      },
+      {
+        "title": "DB Browser for SQLite",
+        "url": "https://sqlitebrowser.org/"
+      },
+      {
+        "title": "Adobe Photoshop Source Code | @CHM Blog | Computer History Museum",
+        "url": "https://www.computerhistory.org/atchm/adobe-photoshop-source-code/"
+      },
+      {
+        "title": "Microsoft MS-DOS early source code | @CHM Blog | Computer History Museum",
+        "url": "https://www.computerhistory.org/atchm/microsoft-ms-dos-early-source-code/"
+      },
+      {
+        "title": "Microsoft Word for Windows Version 1.1a Source Code | @CHM Blog | Computer History Museum",
+        "url": "https://www.computerhistory.org/atchm/microsoft-word-for-windows-1-1a-source-code/"
+      },
+      {
+        "title": "StackEdit | In-browser Markdown editor",
+        "url": "https://stackedit.io/"
+      },
+      {
+        "title": "Prose · A Content Editor for GitHub",
+        "url": "http://prose.io/"
+      },
+      {
+        "title": "rtpMIDI | is a virtual MIDI-driver which allows DAW-applications to communicate via network with other computers.",
+        "url": "http://www.tobias-erichsen.de/software/rtpmidi.html"
+      },
+      {
+        "title": "VMPK. Virtual MIDI Piano Keyboard",
+        "url": "http://vmpk.sourceforge.net/"
+      },
+      {
+        "title": "Burp Suite | PortSwigger",
+        "url": "https://portswigger.net/burp"
+      },
+      {
+        "title": "GBookDown - Download Google Books",
+        "url": "https://greasyfork.org/en/scripts/17113-gbookdown-download-google-books"
+      },
+      {
+        "title": "Virtual x86",
+        "url": "http://copy.sh/v86/"
+      },
+      {
+        "title": "Windows 95 in your browser",
+        "url": "https://win95.ajf.me/"
+      },
+      {
+        "title": "pce-macplus",
+        "url": "https://archive.org/details/mac_MacOS_7.0.1_compilation"
+      },
+      {
+        "title": "Backblaze | The Best Unlimited Online Backup and Cloud Storage Services",
+        "url": "https://www.backblaze.com/"
+      },
+      {
+        "title": "Insomnia REST Client",
+        "url": "https://insomnia.rest/"
+      },
+      {
+        "title": "Numi. Beautiful calculator app for Mac.",
+        "url": "https://numi.io/"
+      },
+      {
+        "title": "Aware",
+        "url": "https://awaremac.com/"
+      },
+      {
+        "title": "ScreenToGif - Record your screen, edit and save as a Gif or video",
+        "url": "https://www.screentogif.com/"
+      },
+      {
+        "title": "FinalCrypt - The world's most unbreakable encryption",
+        "url": "http://www.finalcrypt.org/"
+      },
+      {
+        "title": "Sequel Pro | Sequel Pro is a fast, easy-to-use Mac database management application for working with MySQL databases.",
+        "url": "https://www.sequelpro.com/"
+      },
+      {
+        "title": "Horo - the best free timer app for Mac",
+        "url": "https://matthewpalmer.net/horo-free-timer-mac/"
+      },
+      {
+        "title": "‎Amphetamine",
+        "url": "https://itunes.apple.com/app/amphetamine/id937984704"
+      },
+      {
+        "title": "‎CopyClip - Clipboard History on the Mac",
+        "url": "https://itunes.apple.com/app/copyclip-clipboard-history/id595191960"
+      },
+      {
+        "title": "Flume - A beautiful Instagram experience for your Mac",
+        "url": "https://flumeapp.com/"
+      },
+      {
+        "title": "IINA - The modern media player for macOS",
+        "url": "https://iina.io/"
+      },
+      {
+        "title": "darktable",
+        "url": "https://www.darktable.org/"
+      },
+      {
+        "title": "OpenEmu - Multiple Video Game System",
+        "url": "https://openemu.org/"
+      },
+      {
+        "title": "Shazam - Music Discovery, Charts & Song Lyrics",
+        "url": "https://www.shazam.com/"
+      },
+      {
+        "title": "Typora — a markdown editor, markdown reader.",
+        "url": "https://typora.io/"
+      },
+      {
+        "title": "ImageOptim — better Save for Web",
+        "url": "https://imageoptim.com/mac"
+      },
+      {
+        "title": "Minecraft Classic",
+        "url": "https://classic.minecraft.net/"
+      },
+      {
+        "title": "Taskwarrior - Free and Open Source Software that manages your TODO list from the command line. It is flexible, fast, and unobtrusive. It does its job then gets out of your way.",
+        "url": "https://taskwarrior.org/"
+      },
+      {
+        "title": "Thyme - Console Pomodoro Timer",
+        "url": "http://hughbien.com/thyme/"
+      },
+      {
+        "title": "Moro | Simple CLI tool for tracking work hours",
+        "url": "https://moro.js.org/"
+      },
+      {
+        "title": "asciimoo/wuzz: Interactive cli tool for HTTP inspection",
+        "url": "https://github.com/asciimoo/wuzz"
+      },
+      {
+        "title": "zeit/serve: Static file serving and directory listing",
+        "url": "https://github.com/zeit/serve"
+      },
+      {
+        "title": "antonmedv/fx: Command-line tool and terminal JSON viewer 🔥",
+        "url": "https://github.com/antonmedv/fx"
+      },
+      {
+        "title": "gleitz/howdoi: instant coding answers via the command line",
+        "url": "https://github.com/gleitz/howdoi"
+      },
+      {
+        "title": "beatfreaker/text-meme-cli: Generate text meme",
+        "url": "https://github.com/beatfreaker/text-meme-cli"
+      },
+      {
+        "title": "balzss/cli-typer: Practice touch typing in the commandline and measure your skills.",
+        "url": "https://github.com/balzss/cli-typer"
+      },
+      {
+        "title": "sindresorhus/speed-test: Test your internet connection speed and ping using speedtest.net from the CLI",
+        "url": "https://github.com/sindresorhus/speed-test"
+      },
+      {
+        "title": "diit/overtime-cli: Easy time-overlap tables for remote teams.",
+        "url": "https://github.com/diit/overtime-cli"
+      },
+      {
+        "title": "Clementine Music Player",
+        "url": "https://www.clementine-player.org/"
+      }
+    ]
   }
 ]
