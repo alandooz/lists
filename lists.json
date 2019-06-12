@@ -3,43 +3,43 @@
     "title": "Favorites",
     "items": [
       {
-        "title": "",
+        "title": "1Password",
         "url": "https://my.1password.com/"
       },
       {
-        "title": "",
+        "title": "Dropbox Paper",
         "url": "https://paper.dropbox.com/"
       },
       {
-        "title": "",
+        "title": "Gmail",
         "url": "https://mail.google.com/"
       },
       {
-        "title": "",
+        "title": "Google Calendar",
         "url": "https://calendar.google.com/"
       },
       {
-        "title": "",
+        "title": "YouTube",
         "url": "https://www.youtube.com/"
       },
       {
-        "title": "",
+        "title": "Twitter",
         "url": "https://twitter.com/"
       },
       {
-        "title": "",
+        "title": "Inoreader",
         "url": "https://www.inoreader.com/all_articles"
       },
       {
-        "title": "",
+        "title": "Pocket",
         "url": "https://getpocket.com/"
       },
       {
-        "title": "",
+        "title": "DisfrutemosBA",
         "url": "https://disfrutemosba.buenosaires.gob.ar/"
       },
       {
-        "title": "",
+        "title": "Overcast",
         "url": "https://overcast.fm/"
       }
     ]
