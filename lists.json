@@ -473,6 +473,10 @@
                 "title": "Marketing",
                 "items": [
                   {
+                    "title": "Analytics Academy",
+                    "url": "https://analytics.google.com/analytics/academy/"
+                  },
+                  {
                     "title": "Academy for Ads – Google",
                     "url": "https://landing.google.com/academyforads/#?modal_active=none"
                   },
@@ -769,6 +773,14 @@
                   {
                     "title": "Javascript",
                     "items": [
+                      {
+                        "title": "plainJS - The Vanilla JavaScript Repository",
+                        "url": "https://plainjs.com"
+                      },
+                      {
+                        "title": "You Might Not Need jQuery",
+                        "url": "http://youmightnotneedjquery.com/"
+                      },
                       {
                         "title": "JavaScript in 14 minutes by Jeremy Thomas",
                         "url": "https://jgthms.com/javascript-in-14-minutes/"
@@ -1530,6 +1542,10 @@
               {
                 "title": "Machine Learning",
                 "items": [
+                  {
+                    "title": "Machine Learning Crash Course  |  Google Developers",
+                    "url": "https://developers.google.com/machine-learning/crash-course/"
+                  },
                   {
                     "title": "Stanford Engineering Everywhere | CS229 - Machine Learning",
                     "url": "https://see.stanford.edu/Course/CS229"
@@ -2395,6 +2411,14 @@
   {
     "title": "Utility",
     "items": [
+      {
+        "title": "Jessica Hische - Client Emails Are Hard",
+        "url": "http://jessicahische.is/helpingyouanswer"
+      },
+      {
+        "title": "Shields.io: Quality metadata badges for open source projects",
+        "url": "https://shields.io/"
+      },
       {
         "title": "Open Port Check Tool - Test Port Forwarding on Your Router",
         "url": "http://www.yougetsignal.com/tools/open-ports/"
