@@ -1,5 +1,50 @@
 [
   {
+    "title": "Favorites",
+    "items": [
+      {
+        "title": "",
+        "url": "https://my.1password.com/"
+      },
+      {
+        "title": "",
+        "url": "https://paper.dropbox.com/"
+      },
+      {
+        "title": "",
+        "url": "https://mail.google.com/"
+      },
+      {
+        "title": "",
+        "url": "https://calendar.google.com/"
+      },
+      {
+        "title": "",
+        "url": "https://www.youtube.com/"
+      },
+      {
+        "title": "",
+        "url": "https://twitter.com/"
+      },
+      {
+        "title": "",
+        "url": "https://www.inoreader.com/all_articles"
+      },
+      {
+        "title": "",
+        "url": "https://getpocket.com/"
+      },
+      {
+        "title": "",
+        "url": "https://disfrutemosba.buenosaires.gob.ar/"
+      },
+      {
+        "title": "",
+        "url": "https://overcast.fm/"
+      }
+    ]
+  },
+  {
     "title": "Courses",
     "items": [
       {
