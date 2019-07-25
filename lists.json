@@ -1,5 +1,50 @@
 [
   {
+    "title": "Favorites",
+    "items": [
+      {
+        "title": "1Password",
+        "url": "https://my.1password.com/"
+      },
+      {
+        "title": "Dropbox Paper",
+        "url": "https://paper.dropbox.com/"
+      },
+      {
+        "title": "Gmail",
+        "url": "https://mail.google.com/"
+      },
+      {
+        "title": "Google Calendar",
+        "url": "https://calendar.google.com/"
+      },
+      {
+        "title": "YouTube",
+        "url": "https://www.youtube.com/"
+      },
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/"
+      },
+      {
+        "title": "Inoreader",
+        "url": "https://www.inoreader.com/all_articles"
+      },
+      {
+        "title": "Pocket",
+        "url": "https://getpocket.com/"
+      },
+      {
+        "title": "DisfrutemosBA",
+        "url": "https://disfrutemosba.buenosaires.gob.ar/"
+      },
+      {
+        "title": "Overcast",
+        "url": "https://overcast.fm/"
+      }
+    ]
+  },
+  {
     "title": "Courses",
     "items": [
       {
@@ -473,6 +518,10 @@
                 "title": "Marketing",
                 "items": [
                   {
+                    "title": "Analytics Academy",
+                    "url": "https://analytics.google.com/analytics/academy/"
+                  },
+                  {
                     "title": "Academy for Ads – Google",
                     "url": "https://landing.google.com/academyforads/#?modal_active=none"
                   },
@@ -769,6 +818,14 @@
                   {
                     "title": "Javascript",
                     "items": [
+                      {
+                        "title": "plainJS - The Vanilla JavaScript Repository",
+                        "url": "https://plainjs.com"
+                      },
+                      {
+                        "title": "You Might Not Need jQuery",
+                        "url": "http://youmightnotneedjquery.com/"
+                      },
                       {
                         "title": "JavaScript in 14 minutes by Jeremy Thomas",
                         "url": "https://jgthms.com/javascript-in-14-minutes/"
@@ -1511,7 +1568,7 @@
                   {
                     "title": "How HTTPS works - How HTTPS works",
                     "url": "https://howhttps.works/",
-                    "status": "active"
+                    "status": "completed"
                   },
                   {
                     "title": "How DNS works",
@@ -1530,6 +1587,10 @@
               {
                 "title": "Machine Learning",
                 "items": [
+                  {
+                    "title": "Machine Learning Crash Course  |  Google Developers",
+                    "url": "https://developers.google.com/machine-learning/crash-course/"
+                  },
                   {
                     "title": "Stanford Engineering Everywhere | CS229 - Machine Learning",
                     "url": "https://see.stanford.edu/Course/CS229"
@@ -2401,6 +2462,14 @@
     "title": "Utility",
     "items": [
       {
+        "title": "Jessica Hische - Client Emails Are Hard",
+        "url": "http://jessicahische.is/helpingyouanswer"
+      },
+      {
+        "title": "Shields.io: Quality metadata badges for open source projects",
+        "url": "https://shields.io/"
+      },
+      {
         "title": "Open Port Check Tool - Test Port Forwarding on Your Router",
         "url": "http://www.yougetsignal.com/tools/open-ports/"
       },
@@ -3191,6 +3260,14 @@
       {
         "title": "Minecraft Classic",
         "url": "https://classic.minecraft.net/?join=evFS3DoH6-3mMX2n"
+      },
+      {
+        "title": "CSS Grid Generator",
+        "url": "https://cssgrid-generator.netlify.com/"
+      },
+      {
+        "title": "Twitual | Twitter analyzer",
+        "url": "https://twitual.com/"
       }
     ]
   },
