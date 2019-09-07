@@ -1,101 +1,101 @@
-body {
-  background-color: black;
-  color: azure;
-}
-
 h1 {
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  border-bottom: 3px solid darkred;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+* {
+  box-sizing: border-box;
 }
 
-li {
-  overflow: hidden;
-  padding: 0.5em;
+body {
+  margin: 0;
+  min-width: 250px;
 }
 
-a {
+.checked {
+  text-decoration: overline underline wavy red;;
+}
+
+.close {
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+  color:red;
+  background-color: white;
+}
+
+.close:hover {
+  background-color: #f44336;
   color: white;
 }
 
-a:link {
-  font-weight: bold;
-  text-decoration: none;
-}
-a:visited {
-  font-weight: bold;
-  text-decoration: line-through;
-}
-a:hover, a:focus {
-  text-decoration: underline overline;
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 input {
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
 }
 
-.tab {
+.myInput {
   width: 100%;
-  color: white;
-  overflow: hidden;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  /* margin-bottom: 12px; */
 }
 
-.tab-label {
-  display: flex;
-  justify-content: space-between;
-  padding: 1em;
-  background: #2c3e50;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.tab-label:hover {
-  background: darken(#2c3e50, 10%);
-}
-
-.tab-label::after {
-  content: "\276F";
-  width: 1em;
-  height: 1em;
+#Add {
+  padding: 10px;
+  height: 100%;
+  float: left;
   text-align: center;
-  transition: all .35s;
-}
-
-.tab-content {
-  max-height: 0;
-  padding: 0 1em;
-  color: #2c3e50;
-  transition: all .35s;
-}
-
-.tab-close {
-  display: flex;
-  justify-content: flex-end;
-  padding: 1em;
-  font-size: 0.75em;
-  background: #2c3e50;
+  font-size: 16px;
   cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+  color:green;
+  background-color: white;
+  align-self: center;
 }
 
-.tab-close:hover {
-  background: darken(#2c3e50, 10%);
+#Add:hover {
+  background-color: green;
+  color: white;
 }
 
-input:checked + .tab-label {
-  background: darken(#2c3e50, 10%);
+table, th, td {
+  border-bottom: 1px solid #ddd;
+  text-align: center;
 }
 
-input:checked + .tab-label::after {
-  transform: rotate(90deg);
+table th, table td {
+  padding: 12px;
 }
 
-input:checked ~ .tab-content {
-  max-height: 9999999999999vh;
-  padding: 1em;
+table th, h1 {
+  background-color: #000;
+  color: white;
+}
+
+table tr:hover {
+  background-color: rgb(80, 150, 255);
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 18px;
 }

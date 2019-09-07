@@ -4,72 +4,143 @@ function uuidv4() {
   )
 }
 
-let body = document.getElementById('body');
-var xhr = new XMLHttpRequest();
-xhr.open("GET", "lists.json");
-xhr.addEventListener("load", function () {
-  if (xhr.status == 200) {
+let lists;
+let xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      let jsonData = JSON.parse(xhttp.responseText);
 
-    let jsonData = JSON.parse(xhr.responseText);
-    if (jsonData.length > 0) {
-      let data = document.createElement("div");
-      var started = [{
-        "title": "Active",
-        "items": []
-      }]
-      let ul = retrieveData(jsonData);
-      let ulstarted = retrieveData(started);
-      let listarted = document.createElement("li");
-      listarted.appendChild(ulstarted);
-      data.appendChild(ul);
-      body.appendChild(data);
-      document.getElementById("itemslist").prepend(listarted);
-    }
-
-    function retrieveData(json) {
-      let ul = document.createElement("ul");
-      for (let j = 0; j < json.length; j++) {
-        let li = document.createElement("li");
-        if (!json[j].items) {
-          if (json[j].status == "active") {
-            let x = JSON.parse(JSON.stringify(json[j]));
-            delete x.status;
-            started[0].items.push(x);
-          }
-          let link = document.createElement("a");
-          link.href = json[j].url;
-          link.innerText = json[j].title;
-          li.appendChild(link);
-        } else if (json[j].items) {
-          let tab = document.createElement("div");
-          tab.classList.add("tab");
-          let input = document.createElement("input");
-          input.type = "checkbox";
-          let uid = uuidv4();
-          input.id = uid;
-          let title = document.createElement("label");
-          title.classList.add("tab-label");
-          title.htmlFor = uid;
-          title.innerText = json[j].title;
-          let content = document.createElement("div");
-          content.classList.add("tab-content");
-          let itemslist = retrieveData(json[j].items);
-          itemslist.id = "itemslist";
-          content.appendChild(itemslist);
-          tab.appendChild(input);
-          tab.appendChild(title);
-          tab.appendChild(content);
-          li.appendChild(tab);
-        }
-        ul.appendChild(li);
+      if (jsonData.length > 0) {
+        lists = retrieveData(jsonData);
       }
-      return ul;
+
+      function retrieveData(json, stringCategory = "") {
+        let tempArray = [];
+        for (let j = 0; j < json.length; j++) {
+          if (json[j].items) {
+            let tempFolderArray = retrieveData(json[j].items, stringCategory+">"+json[j].title);
+            tempArray.push(...tempFolderArray);
+          } else if (!json[j].items) {
+            json[j].id = uuidv4();
+            json[j].category = stringCategory.substring(1);
+            tempArray.push(json[j])
+          }
+        }
+        return tempArray;
+      }
+
+      let myNodelist = document.getElementById("myTable");
+      for (let i = 0; i < lists.length; i++) {
+        let tr = document.createElement("TR");
+        let status = document.createElement("TD");
+        if (lists[i].status == "completed") {
+          status.innerText = "✔️"
+        } else if (lists[i].status == "active") {
+          status.innerText = "🔵"
+        } else {
+          status.innerText = "❌"
+        }
+        tr.appendChild(status);
+        let type = document.createElement("TD");
+        type.innerText = lists[i].type || "";
+        tr.appendChild(type);
+        let title = document.createElement("TD");
+        title.innerText = lists[i].title;
+        tr.appendChild(title);
+        let tutor = document.createElement("TD");
+        tutor.innerText = lists[i].tutor || "";
+        tr.appendChild(tutor);
+        let category = document.createElement("TD");
+        category.innerText = lists[i].category;
+        tr.appendChild(category);
+        let price = document.createElement("TD");
+        price.innerText = lists[i].price || "";
+        tr.appendChild(price);
+        let close = document.createElement("TD");
+        close.className = "close";
+        close.innerHTML = `<i class="fas fa-times-circle"></i>`
+        tr.appendChild(close);
+        myNodelist.appendChild(tr);
+      }
+      let closes = document.getElementsByClassName("close");
+      for (let i = 0; i < closes.length; i++) {
+        closes[i].onclick = function() {
+          let div = this.parentElement;
+          div.style.display = "none";
+        }
+      }
     }
+};
+xhttp.open("GET", "lists.json");
+xhttp.send();
 
+function myFunction() {
+  let filterTitle, filterCategory, table, tr, title, i, txtValue, category, txtValue2;
+  filterTitle = document.getElementById("myInputTitle").value.toUpperCase();
+  filterCategory = document.getElementById("myInputCategory").value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    title = tr[i].getElementsByTagName("td")[2];
+    category = tr[i].getElementsByTagName("td")[4];
+    if (title && category) {
+      txtValue = title.textContent || title.innerText;
+      txtValue2 = category.textContent || category.innerText;
+      if (txtValue.toUpperCase().indexOf(filterTitle) > -1 && txtValue2.toUpperCase().indexOf(filterCategory) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
   }
-});
+}
 
-xhr.send();
+let list = document.getElementById('myTable');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'TD' && ev.target.className != 'close') {
+    ev.target.parentNode.classList.toggle('checked');
+  }
+}, false);
+
+function newElement() {
+  let tr = document.createElement("tr");
+  let status = document.createElement("td");
+  status.innerText = document.getElementById("myInputAddStatus").value;
+  tr.appendChild(status);
+  let type = document.createElement("td");
+  type.innerText = document.getElementById("myInputAddType").value;
+  tr.appendChild(type);
+  let title = document.createElement("td");
+  title.innerText = document.getElementById("myInputAddTitle").value;
+  tr.appendChild(title);
+  let tutor = document.createElement("td");
+  tutor.innerText = document.getElementById("myInputAddTutor").value;
+  tr.appendChild(tutor);
+  let category = document.createElement("td");
+  category.innerText = document.getElementById("myInputAddCategory").value;
+  tr.appendChild(category);
+  let close = document.createElement("td");
+  close.innerText = "\u00D7"
+  close.className = "close";
+  close.onclick = function() {
+    let div = this.parentElement;
+    div.style.display = "none";
+  }
+  tr.appendChild(close);
+
+  if (status.innerText === '' || type.innerText === '' || title.innerText === '' || tutor.innerText === '' || category.innerText === '') {
+    alert("You must fill every field!");
+  } else {
+    console.log(tr)
+    document.getElementById("myTable").appendChild(tr);
+  }
+
+  document.getElementById("myInputAddStatus").value = "";
+  document.getElementById("myInputAddType").value = "";
+  document.getElementById("myInputAddTitle").value = "";
+  document.getElementById("myInputAddTutor").value = "";
+  document.getElementById("myInputAddCategory").value = "";
+}
 
 // {
 //   "id": "uuid4",

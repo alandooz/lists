@@ -1,14 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-  <link rel="stylesheet" href="style.css">
+<html>
 <head>
+  <title>Alan Becker Capuya | Path</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Alan Becker Capuya | Path</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body id="body">
+<body>
   <h1>Alan Becker Capuya | Lists</h1>
+  <div class="header" style="display:flex;" id="add">
+      <div class="myInput" id="myInputAddStatus" style="display:flex; align-items:center;width: 60%;">
+          <input type="checkbox" name="status" value="completed"> ✔️
+          <input type="checkbox" name="status" value="active"> 🔵
+          <input type="checkbox" name="status" value="null"> ❌
+      </div>
+    <div class="myInput" id="myInputAddType" style="display:flex; align-items:center;">
+        <input type="checkbox" name="type" value="course"> 💻
+        <input type="checkbox" name="type" value="audio"> 📻
+        <input type="checkbox" name="type" value="book"> 📘
+        <input type="checkbox" name="type" value="video"> 🎞
+    </div>
+    <input type="text" class="myInput" id="myInputAddTitle" placeholder="Add a Title" title="Type in a title to add">
+    <input type="text" class="myInput" id="myInputAddUrl" placeholder="Add a Url" title="Type in a url to add">
+    <input type="text" class="myInput" id="myInputAddTutor" placeholder="Add a Tutor" title="Type in a tutor to add">
+    <input type="text" class="myInput" id="myInputAddCategory" placeholder="Add a Category" title="Type in a category to add">
+    <div class="myInput" id="myInputAddPrice" style="display:flex; align-items:center;width: 50%;">
+        <input type="checkbox" name="price" value="free"> 🆓
+        <input type="checkbox" name="price" value="paid"> 💲
+    </div>
+    <span onclick="newElement()" id="Add"><i class="fas fa-plus-circle"></i></span>
+  </div>
+  <div style="display:flex;" id="search">
+      <div class="myInput" id="myInputStatus" style="display:flex; align-items:center;width: 50%;" onkeyup="myFunction()">
+          <input type="checkbox" name="status" value="completed"> ✔️
+          <input type="checkbox" name="status" value="active"> 🔵
+          <input type="checkbox" name="status" value="null"> ❌
+      </div>
+      <div class="myInput" id="myInputType" style="display:flex; align-items:center;width: 70%;" onkeyup="myFunction()">
+          <input type="checkbox" name="type" value="course"> 💻
+          <input type="checkbox" name="type" value="audio"> 📻
+          <input type="checkbox" name="type" value="book"> 📘
+          <input type="checkbox" name="type" value="video"> 🎞
+      </div>
+      <input type="text" class="myInput" id="myInputTitle" onkeyup="myFunction()" placeholder="Search for Titles.." title="Type in a title">
+      <input type="text" class="myInput"  id="myInputTutor" onkeyup="myFunction()" placeholder="Search for Tutor.." title="Type in a tutor">
+      <input type="text" class="myInput"  id="myInputCategory" onkeyup="myFunction()" placeholder="Search for Categories.." title="Type in a category">
+      <div class="myInput" id="myInputPrice" style="display:flex; align-items:center;width: 40%;" onkeyup="myFunction()">
+          <input type="checkbox" name="price" value="free"> 🆓
+          <input type="checkbox" name="price" value="paid"> 💲
+      </div>
+  </div>
+  <table id="myTable">
+    <tr class="header">
+      <th style="width:5%;">Status</th>
+      <th style="width:5%;">Type</th>
+      <th>Title</th>
+      <th>Tutor</th>
+      <th>Category</th>
+      <th style="width:5%;">Price</th>
+      <th style="width:1%;"></th>
+    </tr>
+  </table>
 </body>
 <script src="script.js"></script>
 </html>
