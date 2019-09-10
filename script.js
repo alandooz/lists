@@ -1,162 +1,383 @@
+function mode() {
+  let mode = {}
+  mode.values = [];
+  document.querySelectorAll('input[name="mode"]').forEach(element => {
+    mode.values.push(element.value);
+  });
+  mode.selected = document.querySelector('input[name="mode"]:checked').value;
+  if (mode.values.length == 2) {
+    if (mode.values[0] != mode.selected) {
+      mode.notSelected = mode.values[0];
+    } else {
+      mode.notSelected = mode.values[1];
+    }
+  }
+  mode.education = document.querySelectorAll('[education]');
+  mode.library = document.querySelectorAll('[library]');
+  return mode;
+}
+
+function changeMode(list) {
+  let mode = this.mode();
+  let myTable = document.getElementById("myTable");
+  let myTableHeader = myTable.firstElementChild;
+  let body = [...document.getElementsByTagName('body')][0];
+  let newTable = document.createElement("TABLE");
+  newTable.id = "myTable";
+  newTable.appendChild(myTableHeader)
+  // newTable.addEventListener('dblclick', function(ev) {
+  //   if (ev.target.tagName === 'TD' && ev.target.className != 'close') {
+  //     ev.target.parentNode.classList.toggle('checked');
+  //   }
+  // }, false);
+  mode[mode.selected].forEach(element => {
+    let hasCheckbox = false;
+    [...element.children].forEach(element => {
+      if (element.type == 'checkbox') {
+        hasCheckbox = true;
+      }
+    });
+    if (hasCheckbox) {
+      element.style.display = "flex";
+    } else {
+      element.style.display = "table-cell";
+    }
+  });
+  mode[mode.notSelected].forEach(element => {
+    element.style.display = "none";
+  });
+  this.list.forEach(element => {
+    if (element.title == capitalize(mode.selected)) {
+      listSelected = retrieveData(element.items);
+    }
+  });
+  myTable.parentNode.removeChild(myTable);
+  body.appendChild(newTable)
+  createTable(listSelected);
+}
+
 function uuidv4() {
   return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
     (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
   )
 }
 
-let lists;
-let xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      let jsonData = JSON.parse(xhttp.responseText);
-
-      if (jsonData.length > 0) {
-        lists = retrieveData(jsonData);
-      }
-
-      function retrieveData(json, stringCategory = "") {
-        let tempArray = [];
-        for (let j = 0; j < json.length; j++) {
-          if (json[j].items) {
-            let tempFolderArray = retrieveData(json[j].items, stringCategory+">"+json[j].title);
-            tempArray.push(...tempFolderArray);
-          } else if (!json[j].items) {
-            json[j].id = uuidv4();
-            json[j].category = stringCategory.substring(1);
-            tempArray.push(json[j])
-          }
-        }
-        return tempArray;
-      }
-
-      let myNodelist = document.getElementById("myTable");
-      for (let i = 0; i < lists.length; i++) {
-        let tr = document.createElement("TR");
-        let status = document.createElement("TD");
-        if (lists[i].status == "completed") {
-          status.innerText = "✔️"
-        } else if (lists[i].status == "active") {
-          status.innerText = "🔵"
-        } else {
-          status.innerText = "❌"
-        }
-        tr.appendChild(status);
-        let type = document.createElement("TD");
-        type.innerText = lists[i].type || "";
-        tr.appendChild(type);
-        let title = document.createElement("TD");
-        title.innerText = lists[i].title;
-        tr.appendChild(title);
-        let tutor = document.createElement("TD");
-        tutor.innerText = lists[i].tutor || "";
-        tr.appendChild(tutor);
-        let category = document.createElement("TD");
-        category.innerText = lists[i].category;
-        tr.appendChild(category);
-        let price = document.createElement("TD");
-        price.innerText = lists[i].price || "";
-        tr.appendChild(price);
-        let close = document.createElement("TD");
-        close.className = "close";
-        close.innerHTML = `<i class="fas fa-times-circle"></i>`
-        tr.appendChild(close);
-        myNodelist.appendChild(tr);
-      }
-      let closes = document.getElementsByClassName("close");
-      for (let i = 0; i < closes.length; i++) {
-        closes[i].onclick = function() {
-          let div = this.parentElement;
-          div.style.display = "none";
-        }
-      }
-    }
-};
-xhttp.open("GET", "lists.json");
-xhttp.send();
-
-function myFunction() {
-  let filterTitle, filterCategory, table, tr, title, i, txtValue, category, txtValue2;
-  filterTitle = document.getElementById("myInputTitle").value.toUpperCase();
-  filterCategory = document.getElementById("myInputCategory").value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
-  for (i = 0; i < tr.length; i++) {
-    title = tr[i].getElementsByTagName("td")[2];
-    category = tr[i].getElementsByTagName("td")[4];
-    if (title && category) {
-      txtValue = title.textContent || title.innerText;
-      txtValue2 = category.textContent || category.innerText;
-      if (txtValue.toUpperCase().indexOf(filterTitle) > -1 && txtValue2.toUpperCase().indexOf(filterCategory) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }
-  }
+function capitalize(s) {
+  if (typeof s !== 'string') return ''
+  return s.charAt(0).toUpperCase() + s.slice(1)
 }
 
-let list = document.getElementById('myTable');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'TD' && ev.target.className != 'close') {
-    ev.target.parentNode.classList.toggle('checked');
+function retrieveData(json, stringCategory = "") {
+  let tempArray = [];
+  for (let j = 0; j < json.length; j++) {
+    if (json[j].items) {
+      let tempFolderArray = retrieveData(json[j].items, stringCategory+">"+json[j].title);
+      tempArray.push(...tempFolderArray);
+    } else if (!json[j].items) {
+      json[j].id = uuidv4();
+      json[j].category = stringCategory.substring(1);
+      tempArray.push(json[j])
+    }
   }
-}, false);
+  return tempArray;
+}
 
-function newElement() {
-  let tr = document.createElement("tr");
-  let status = document.createElement("td");
-  status.innerText = document.getElementById("myInputAddStatus").value;
-  tr.appendChild(status);
-  let type = document.createElement("td");
-  type.innerText = document.getElementById("myInputAddType").value;
-  tr.appendChild(type);
-  let title = document.createElement("td");
-  title.innerText = document.getElementById("myInputAddTitle").value;
+function newEntry(item) {
+  let mode = this.mode();
+  let tr = document.createElement("TR");
+  let title = document.createElement("TD");
+  title.setAttribute("title", "");
+  let titlelink = document.createElement('a');
+  titlelink.appendChild(document.createTextNode(item.title || ""));
+  titlelink.title = item.title || "";
+  titlelink.href = item.url || "#";
+  title.appendChild(titlelink);
   tr.appendChild(title);
-  let tutor = document.createElement("td");
-  tutor.innerText = document.getElementById("myInputAddTutor").value;
-  tr.appendChild(tutor);
-  let category = document.createElement("td");
-  category.innerText = document.getElementById("myInputAddCategory").value;
+  if (mode.selected == "library") {
+    let description = document.createElement("TD");
+    description.setAttribute("description", "");
+    if (item.description) {
+      description.innerHTML = `<span>`+item.description+`</span>`;
+    }
+    tr.appendChild(description);
+  } else {
+    let tutor = document.createElement("TD");
+    tutor.setAttribute("tutor", "");
+    if (item.tutor) {
+      let tutorlink = document.createElement('a');
+      tutorlink.appendChild(document.createTextNode(item.tutor || ""));
+      tutorlink.title = item.tutor || "";
+      tutorlink.href = item.tutorUrl || "#";
+      tutor.appendChild(tutorlink);
+    }
+    tr.appendChild(tutor);
+  }
+  let category = document.createElement("TD");
+  category.setAttribute("category", "");
+  if (item.category) {
+    let categories = item.category.split('>');
+    // for (let i = 0; i < categories.length; i++) {
+    //   category.innerHTML += `<span>`+categories[i]+`</span>`;
+    //   if (i != categories.length - 1) {
+    //     category.innerHTML += `<b> > </b>`;
+    //   }
+    // }
+    category.innerHTML = `<span>`+categories.join(' > ')+`</span>`;
+  }
   tr.appendChild(category);
-  let close = document.createElement("td");
-  close.innerText = "\u00D7"
+  if (mode.selected == "education") {
+    let type = document.createElement("TD");
+    type.setAttribute("type", "");
+    if (item.type) {
+      type.innerHTML = `<span>`+item.type+`</span>`;
+      // if (item.type == "course") {
+      //   price.innerHTML = `<span>💻</span>`;
+      // } else if (item.type == "audio") {
+      //   type.innerHTML = `<span>📻</span>`;
+      // } else if (item.type == "book") {
+      //   type.innerHTML = `<span>📘</span>`;
+      // } else if (item.type == "video") {
+      //   type.innerHTML = `<span>🎞</span>`;
+      // }
+    }
+    tr.appendChild(type);
+    let price = document.createElement("TD");
+    price.setAttribute("price", "");
+    if (item.price) {
+      price.innerHTML = `<span>`+item.price+`</span>`;
+      // if (item.price == "free") {
+      //   price.innerHTML = `<span>🆓</span>`;
+      // } else if (item.price == "paid") {
+      //   price.innerHTML = `<span>💲</span>`;
+      // }
+    }
+    tr.appendChild(price);
+    let status = document.createElement("TD");
+    status.setAttribute("status", "");
+    if (item.status) {
+      status.innerHTML = `<span>`+item.status+`</span>`;
+    } else {
+      status.innerHTML = `<span>❌</span>`;
+    }
+    // if (item.status == "completed") {
+    //   status.innerHTML = `<span>✔️</span>`;
+    // } else if (item.status == "active") {
+    //   status.innerHTML = `<span>🔵</span>`;
+    // } else {
+    //   status.innerHTML = `<span>❌</span>`;
+    // }
+    tr.appendChild(status);
+  }
+  let close = document.createElement("TD");
+  close.setAttribute("close", "");
   close.className = "close";
+  close.innerHTML = `<i class="fas fa-times-circle"></i>`
   close.onclick = function() {
     let div = this.parentElement;
     div.style.display = "none";
   }
   tr.appendChild(close);
-
-  if (status.innerText === '' || type.innerText === '' || title.innerText === '' || tutor.innerText === '' || category.innerText === '') {
-    alert("You must fill every field!");
-  } else {
-    console.log(tr)
-    document.getElementById("myTable").appendChild(tr);
-  }
-
-  document.getElementById("myInputAddStatus").value = "";
-  document.getElementById("myInputAddType").value = "";
-  document.getElementById("myInputAddTitle").value = "";
-  document.getElementById("myInputAddTutor").value = "";
-  document.getElementById("myInputAddCategory").value = "";
+  return tr
 }
 
-// {
-//   "id": "uuid4",
-//   "title": "Folder",
-//   "items": [
-//   ]
-// }
+function createTable(lists) {
+  let myTable = document.getElementById("myTable");
+  for (let i = 0; i < lists.length; i++) {
+    let tr = newEntry(lists[i]);
+    myTable.appendChild(tr);
+  }
+}
 
-// {
-//   "id": "uuid4",
-//   "title": "Course",
-//   "description": "Description",
-//   "url": "#",
-//   "status": "✔️",
-//   "type": "💻",
-//   "tutor": "Tutor",
-//   "time": "Time",
-//   "price": "💲"
-// }
+function filtering() {
+  let mode, table, items, filterTitle, filterUrl, filterDescription, filterTutor, filterTutorUrl, filterCategory, filterType, filterPrice, filterStatus, title, url, description, tutor, tutorUrl, category, type, price, status, itPass;
+
+  mode = this.mode();
+  table = document.getElementById("myTable");
+  items = table.getElementsByTagName("tr");
+  filterTitle = document.getElementById("Title").value.toUpperCase();
+  filterUrl= document.getElementById("Url").value.toUpperCase();
+  filterDescription= document.getElementById("Description").value.toUpperCase();
+  filterTutor= document.getElementById("Tutor").value.toUpperCase();
+  filterTutorUrl= document.getElementById("TutorUrl").value.toUpperCase();
+  filterCategory = document.getElementById("Category").value.toUpperCase();
+  filterType= this.onSelect("Type");
+  filterPrice= this.onSelect("Price");
+  filterStatus= this.onSelect("Status");
+
+  for (let i = 1; i < items.length; i++) {
+
+    title = items[i].querySelector('[title]').firstChild;
+    url = title.href;
+    if (items[i].querySelector('[description]')) {
+      description = items[i].querySelector('[description]').firstChild || items[i].querySelector('[description]');
+    }
+    if (items[i].querySelector('[tutor]')) {
+      if (items[i].querySelector('[tutor]').firstChild) {
+        tutor = items[i].querySelector('[tutor]').firstChild;
+        tutorUrl = tutor.href;
+      } else {
+        tutor = items[i].querySelector('[tutor]');
+      }
+    }
+    category = items[i].querySelector('[category]').firstChild;
+    if (items[i].querySelector('[type]')) {
+      type = items[i].querySelector('[type]').firstChild || items[i].querySelector('[type]');
+    }
+    if (items[i].querySelector('[price]')) {
+      price = items[i].querySelector('[price]').firstChild || items[i].querySelector('[price]');
+    }
+    if (items[i].querySelector('[status]')) {
+      status = items[i].querySelector('[status]').firstChild || items[i].querySelector('[status]');
+    }
+
+    itPass = true;
+
+    if (itPass && title.textContent.toUpperCase().indexOf(filterTitle) == -1) {
+      itPass = false;
+    }
+    if (itPass && url.toUpperCase().indexOf(filterUrl) == -1) {
+      itPass = false;
+    }
+    if (itPass && description && description.textContent.toUpperCase().indexOf(filterDescription) == -1) {
+      itPass = false;
+    }
+    if (itPass && tutor && tutor.textContent.toUpperCase().indexOf(filterTutor) == -1) {
+      itPass = false;
+    }
+    if (itPass && tutorUrl && tutorUrl.toUpperCase().indexOf(filterTutorUrl) == -1) {
+      itPass = false;
+    }
+    if (itPass && category.textContent.toUpperCase().indexOf(filterCategory) == -1) {
+      itPass = false;
+    }
+    if (itPass && type && filterType) {
+      itPass = false;
+      if (!Array.isArray(filterType)) {
+        if (type && (type.textContent == filterType)) {
+          itPass = true;
+        }
+      } else {
+        filterType.forEach(element => {
+          if (type && (type.textContent == element)) {
+            itPass = true;
+          }
+        });
+      }
+    }
+    if (itPass && price && filterPrice) {
+      itPass = false;
+      if (!Array.isArray(filterPrice)) {
+        if (price && (stapricetus.textContent == filterPrice)) {
+          itPass = true;
+        }
+      } else {
+        filterPrice.forEach(element => {
+          if (price && (price.textContent == element)) {
+            itPass = true;
+          }
+        });
+      }
+    }
+    if (itPass && status && filterStatus) {
+      itPass = false;
+      if (!Array.isArray(filterStatus)) {
+        if (status && (status.textContent == filterStatus)) {
+          itPass = true;
+        }
+      } else {
+        filterStatus.forEach(element => {
+          if (status && (status.textContent == element)) {
+            itPass = true;
+          }
+        });
+      }
+    }
+
+    if (itPass) {
+      items[i].style.display = "";
+    } else {
+      items[i].style.display = "none";
+    }
+
+    this.clearInsert();
+  }
+}
+
+function clearInsert() {
+  document.getElementById("Title").value = "";
+  document.getElementById("Url").value = "";
+  document.getElementById("Description").value = "";
+  document.getElementById("Tutor").value = "";
+  document.getElementById("TutorUrl").value = "";
+  document.getElementById("Category").value = "";
+  let allType = document.getElementsByName('type');
+  for(var i = 0; i < allType.length; i++) {
+    allType[i].checked = false;
+  }
+  let allPrice = document.getElementsByName('price');
+  for(var i = 0; i < allPrice.length; i++) {
+    allPrice[i].checked = false;
+  }
+  let allStatus = document.getElementsByName('status');
+  for(var i = 0; i < allStatus.length; i++) {
+    allStatus[i].checked = false;
+  }
+}
+
+function newElement() {
+  let mode = this.mode();
+  let item = {title:document.getElementById('Title').value,url:document.getElementById('Url').value,description:document.getElementById('Description').value,tutor:document.getElementById('Tutor').value,tutorUrl:document.getElementById('TutorUrl').value,category:document.getElementById('Category').value,type:this.onSelect('Type'),price:this.onSelect('Price'),status:this.onSelect('Status')};
+  let tr = newEntry(item);
+  if (document.getElementById("Title").value == '' || document.getElementById("Url").value == '' || document.getElementById("Category").value == '' || (document.getElementById("TutorUrl").value != '' && document.getElementById("Tutor").value == '') || Array.isArray(this.onSelect('Type')) || Array.isArray(this.onSelect('Price')) || Array.isArray(this.onSelect('Status'))) {
+    let errorMsg = "You have the following errors: "
+    let missingFields = [];
+    if (document.getElementById("Title").value == '') {missingFields.push("\nMissing Title field.")}
+    if (document.getElementById("Url").value == '') {missingFields.push("\nMising Title URL field.")}
+    if (document.getElementById("Category").value == '') {missingFields.push("\nMissing Category field.")}
+    if (document.getElementById("TutorUrl").value != '' && document.getElementById("Tutor").value == '') {missingFields.push("\nMissing Tutor field for Tutor Url.")}
+    if (Array.isArray(this.onSelect('Type'))) {missingFields.push("\nYou can select only one Type.")}
+    if (Array.isArray(this.onSelect('Price'))) {missingFields.push("\nYou can select only one Price.")}
+    if (Array.isArray(this.onSelect('Status'))) {missingFields.push("\nYou can select only one Status.")}
+    alert(errorMsg+missingFields.join(" "));
+  } else {
+    this.clearInsert();
+    document.getElementById("myTable").insertBefore(tr, document.getElementById("myTable").childNodes[1]);
+    console.log(tr)
+  }
+}
+
+function onSelect(id) {
+  let element = document.getElementById(id);
+  let values = []
+  for(var i = 0; i < element.children.length; i++) {
+    if (element.children[i].checked) {
+      values.push(element.children[i].value);
+    }
+  }
+  if (values.length == 0) {
+    return null;
+  } else if (values.length == 1) {
+    return values[0];
+  } else {
+    return values;
+  }
+}
+
+let listSelected;
+
+const xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    window.list = JSON.parse(xhttp.responseText);
+    window.list.forEach(element => {
+      let modeSelected = mode();
+      if (element.title == capitalize(modeSelected.selected)) {
+        listSelected = retrieveData(element.items);
+      }
+    });
+    createTable(listSelected);
+    changeMode(listSelected);
+  }
+};
+xhttp.open("GET", "lists.json");
+xhttp.send();

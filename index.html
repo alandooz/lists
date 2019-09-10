@@ -9,57 +9,60 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Alan Becker Capuya | Lists</h1>
-  <div class="header" style="display:flex;" id="add">
-      <div class="myInput" id="myInputAddStatus" style="display:flex; align-items:center;width: 60%;">
-          <input type="checkbox" name="status" value="completed"> ✔️
-          <input type="checkbox" name="status" value="active"> 🔵
-          <input type="checkbox" name="status" value="null"> ❌
+  <header>
+    <span>
+      <input type="radio" name="mode" value="education" onclick="changeMode(window.list)" checked>
+      📖
+    </span>
+    <h1>Alan Becker Capuya | Lists</h1>
+    <span>
+      <input type="radio" name="mode" value="library" onclick="changeMode(window.list)">
+      📚
+    </span>
+  </header>
+  <div id="Insert">
+      <input type="text" class="myInput" id="Title" placeholder="Title" title="Type in a title">
+      <input type="url" class="myInput" id="Url" placeholder="Title URL" title="Type in a URL for title">
+      <input type="text" class="myInput" id="Description" placeholder="Description" title="Type in a description" library>
+      <input type="text" class="myInput"  id="Tutor" placeholder="Tutor" title="Type in a tutor" education>
+      <input type="url" class="myInput" id="TutorUrl" placeholder="Tutor URL" title="Type in a URL for tutor" education>
+      <input type="text" class="myInput"  id="Category" placeholder="Category" title="Type in a category">
+      <div class="myInput" id="Type" education>
+        <input type="checkbox" name="type" value="💻">
+        <span>💻</span>
+        <input type="checkbox" name="type" value="📻">
+        <span>📻</span>
+        <input type="checkbox" name="type" value="📘">
+        <span>📘</span>
+        <input type="checkbox" name="type" value="🎞">
+        <span>🎞</sp>
       </div>
-    <div class="myInput" id="myInputAddType" style="display:flex; align-items:center;">
-        <input type="checkbox" name="type" value="course"> 💻
-        <input type="checkbox" name="type" value="audio"> 📻
-        <input type="checkbox" name="type" value="book"> 📘
-        <input type="checkbox" name="type" value="video"> 🎞
-    </div>
-    <input type="text" class="myInput" id="myInputAddTitle" placeholder="Add a Title" title="Type in a title to add">
-    <input type="text" class="myInput" id="myInputAddUrl" placeholder="Add a Url" title="Type in a url to add">
-    <input type="text" class="myInput" id="myInputAddTutor" placeholder="Add a Tutor" title="Type in a tutor to add">
-    <input type="text" class="myInput" id="myInputAddCategory" placeholder="Add a Category" title="Type in a category to add">
-    <div class="myInput" id="myInputAddPrice" style="display:flex; align-items:center;width: 50%;">
-        <input type="checkbox" name="price" value="free"> 🆓
-        <input type="checkbox" name="price" value="paid"> 💲
-    </div>
-    <span onclick="newElement()" id="Add"><i class="fas fa-plus-circle"></i></span>
-  </div>
-  <div style="display:flex;" id="search">
-      <div class="myInput" id="myInputStatus" style="display:flex; align-items:center;width: 50%;" onkeyup="myFunction()">
-          <input type="checkbox" name="status" value="completed"> ✔️
-          <input type="checkbox" name="status" value="active"> 🔵
-          <input type="checkbox" name="status" value="null"> ❌
+      <div class="myInput" id="Price" education>
+        <input type="checkbox" name="price" value="🆓">
+        <span>🆓</span>
+        <input type="checkbox" name="price" value="💲">
+        <span>💲</span>
       </div>
-      <div class="myInput" id="myInputType" style="display:flex; align-items:center;width: 70%;" onkeyup="myFunction()">
-          <input type="checkbox" name="type" value="course"> 💻
-          <input type="checkbox" name="type" value="audio"> 📻
-          <input type="checkbox" name="type" value="book"> 📘
-          <input type="checkbox" name="type" value="video"> 🎞
+      <div class="myInput" id="Status" education>
+          <input type="checkbox" name="status" value="✔️">
+          <span>✔️</span>
+          <input type="checkbox" name="status" value="🔵">
+          <span>🔵</span>
+          <input type="checkbox" name="status" value="❌">
+          <span>❌</span>
       </div>
-      <input type="text" class="myInput" id="myInputTitle" onkeyup="myFunction()" placeholder="Search for Titles.." title="Type in a title">
-      <input type="text" class="myInput"  id="myInputTutor" onkeyup="myFunction()" placeholder="Search for Tutor.." title="Type in a tutor">
-      <input type="text" class="myInput"  id="myInputCategory" onkeyup="myFunction()" placeholder="Search for Categories.." title="Type in a category">
-      <div class="myInput" id="myInputPrice" style="display:flex; align-items:center;width: 40%;" onkeyup="myFunction()">
-          <input type="checkbox" name="price" value="free"> 🆓
-          <input type="checkbox" name="price" value="paid"> 💲
-      </div>
+      <span onclick="filtering()" id="Search"><i class="fas fa-search"></i></span>
+      <span onclick="newElement()" id="Add"><i class="fas fa-plus-circle"></i></span>
   </div>
   <table id="myTable">
     <tr class="header">
-      <th style="width:5%;">Status</th>
-      <th style="width:5%;">Type</th>
       <th>Title</th>
-      <th>Tutor</th>
+      <th library>Description</th>
+      <th education>Tutor</th>
       <th>Category</th>
-      <th style="width:5%;">Price</th>
+      <th style="width:5%;" education>Type</th>
+      <th style="width:5%;" education>Price</th>
+      <th style="width:5%;" education>Status</th>
       <th style="width:1%;"></th>
     </tr>
   </table>
