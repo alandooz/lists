@@ -180,6 +180,10 @@
         "title": "Utility",
         "items": [
           {
+            "title": "Twitter Analytics",
+            "url": "https://foller.me/"
+          },
+          {
             "title": "Jessica Hische - Client Emails Are Hard",
             "url": "http://jessicahische.is/helpingyouanswer"
           },
@@ -986,6 +990,40 @@
           {
             "title": "Twitual | Twitter analyzer",
             "url": "https://twitual.com/"
+          },
+          {
+            "title": "Webrecorder | Collect & Revisit the Web",
+            "description": "Webrecorder is a web archiving service anyone can use for free to save web pages. Making a capture is as easy as browsing a page like you normally would. Webrecorder automatically archives the page, along with any additional content triggered by interactions.",
+            "url": "https://webrecorder.io/"
+          },
+          {
+            "title": "CSS Grid Generator",
+            "url": "https://grid.layoutit.com/"
+          },
+          {
+            "title": "themer",
+            "description": "themer takes a set of colors and generates themes for your development environment (editors, terminals, wallpapers, and more).",
+            "url": "https://themer.dev/"
+          },
+          {
+            "title": "cheat.sh",
+            "description": "The only cheat sheet you need. Unified access to the best community driven documentation repositories of the world.",
+            "url": "https://cheat.sh/"
+          },
+          {
+            "title": "RSS Mix",
+            "description": "Mix any number of RSS feeds into one unique new feed!",
+            "url": "http://www.rssmix.com/"
+          },
+          {
+            "title": "RSSUnify",
+            "description": "Create combined RSS feeds from multiple sources.",
+            "url": "https://rssunify.com"
+          },
+          {
+            "title": "Animista",
+            "description": "A place where you can play with a collection of ready to use CSS animations, tweak them and download only those you will actually use.",
+            "url": "http://animista.net/"
           }
         ]
       },
@@ -2455,6 +2493,96 @@
           {
             "title": "Clementine Music Player",
             "url": "https://www.clementine-player.org/"
+          },
+          {
+            "title": "Kast",
+            "description": "Kast is a real-time video sharing app with screen capture, voice, text, and video chat technology that makes it easy to connect with friends wherever they are. Watch parties made easy. Share movies, TV shows, games, and whatever you want with 100+ people.",
+            "url": "https://kast.gg"
+          },
+          {
+            "title": "FBX ",
+            "description": "RECORD GAMES IN SMOOTH HD. ADD STICKERS, GIFS, CAPTIONS TO VIDEOS. PERSONALIZE YOUR GAMEPLAY. MAKE BETTER VIDEOS.",
+            "url": "https://fbx.gg/"
+          },
+          {
+            "title": "Scribus",
+            "description": "Open Source Desktop Publishing",
+            "url": "https://www.scribus.net/"
+          },
+          {
+            "title": "Kdenlive | KDE Non-Linear Video Editor",
+            "description": "Non-linear video editing is much more powerful than beginners’ (linear) editors, hence it requires a bit more organization before starting. However, it is not reserved to specialists and can be used for small personal projects.",
+            "url": "https://kdenlive.org/"
+          },
+          {
+            "title": "Natron",
+            "description": "Open Source Compositing Software For VFX and Motion Graphics.",
+            "url": "https://natrongithub.github.io/"
+          },
+          {
+            "title": "FontForge",
+            "description": "Free and open source font editor.",
+            "url": "http://fontforge.github.io/"
+          }
+        ]
+      },
+      {
+        "title": "Extensions",
+        "items": [
+          {
+            "title": "Social Fixer",
+            "description": "Customize and Enhance Facebook!",
+            "url": "https://socialfixer.com/"
+          },
+          {
+            "title": "PocketTube: Youtube Subscription Manager",
+            "description": "Organize YouTube Subscriptions",
+            "url": "https://yousub.info"
+          },
+          {
+            "title": "Message/Chat Downloader",
+            "description": "A Chrome Extenstion used to download and archive Facebook® messages(chat/conversation)",
+            "url": "https://chrome.google.com/webstore/detail/messagechat-downloader/nkinapjekllgfipphkgpmombekfclghe"
+          },
+          {
+            "title": "Pocket",
+            "description": "Help people save interesting articles, videos and more from the web for later enjoyment.",
+            "url": "https://getpocket.com/add/"
+          },
+          {
+            "title": "Vue Devtools",
+            "description": "Browser devtools extension for debugging Vue.js applications.",
+            "url": "https://github.com/vuejs/vue-devtools"
+          },
+          {
+            "title": "WAVE",
+            "description": "The WAVE Chrome and Firefox extensions allows you to evaluate web content for accessibility issues directly within Chrome and Firefox browsers.",
+            "url": "https://wave.webaim.org/extension/"
+          },
+          {
+            "title": "Helper Tools for Instagram",
+            "description": "Create followers/following list of IG account, find common users of 2 IG accounts, mass following, liking the posts in your feed.",
+            "url": "https://chrome.google.com/webstore/detail/helper-tools-for-instagra/hcdbfckhdcpepllecbkaaojfgipnpbpb/"
+          },
+          {
+            "title": "AdBlock",
+            "description": "Use AdBlock to stop ads, improve browser speeds, and protect yourself online.",
+            "url": "https://www.getadblock.com/"
+          },
+          {
+            "title": "1Password X",
+            "description": "1Password X is the best way to experience 1Password in your browser. It works everywhere you use Chrome, Firefox, Brave, or Opera, including on Linux or Chrome OS. Easily sign in to sites, use suggested passwords, and find what you need. Everything is available at your fingertips.",
+            "url": "https://1password.com/downloads/#browsers"
+          },
+          {
+            "title": "Session Buddy",
+            "description": "Manage Browser Tabs and Bookmarks with Ease.",
+            "url": "https://sessionbuddy.com/"
+          },
+          {
+            "title": "JSON Formatter",
+            "description": "Makes JSON easy to read.",
+            "url": "https://chrome.google.com/webstore/detail/json-formatter/mhimpmpmffogbmmkmajibklelopddmjf"
           }
         ]
       }
@@ -2962,7 +3090,8 @@
                 "items": [
                   {
                     "title": "Startup School",
-                    "url": "https://www.startupschool.org/"
+                    "url": "https://www.startupschool.org/latest",
+                    "status": "🔵"
                   },
                   {
                     "title": "Academia Emprende",
@@ -3354,6 +3483,10 @@
                       {
                         "title": "Step Up Your JS: A Comprehensive Guide to Intermediate JavaScript",
                         "url": "https://www.educative.io/collection/5679346740101120/5707702298738688"
+                      },
+                      {
+                        "title": "Functional-Light JavaScript",
+                        "url": "https://github.com/getify/functional-light-js"
                       }
                     ]
                   },
@@ -3586,6 +3719,10 @@
                   {
                     "title": "How to keep up to date on Front-End Technologies - The Recipe",
                     "url": "https://uptodate.frontendrescue.org/"
+                  },
+                  {
+                    "title": "The A11Y Project | A community-driven effort to make web accessibility easier.",
+                    "url": "https://a11yproject.com/"
                   }
                 ]
               },
@@ -4738,6 +4875,26 @@
               {
                 "title": "The College Board - College Admissions - SAT - University & College Search Tool",
                 "url": "https://www.collegeboard.org/?"
+              }
+            ]
+          },
+          {
+            "title": "Robotic",
+            "items": [
+              {
+                "title": "InMoov",
+                "description": "InMoov is the first Open Source 3D printed life-size robot.",
+                "url": "http://inmoov.fr/"
+              }
+            ]
+          },
+          {
+            "title": "Aerospace",
+            "items": [
+              {
+                "title": "BPS.space",
+                "description": "BPS.space develops model rocketry components, aimed at closely matching the pace of advancement in the space-launch industry. Learning by experimentation is the most effective way to gain a deep understanding of new concepts, which is why providing hands-on experience with advanced rocketry components is important for the next generation of scientists, engineers, and astronauts. ",
+                "url": "https://bps.space/"
               }
             ]
           }
