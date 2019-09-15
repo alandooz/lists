@@ -1,3 +1,23 @@
+
+function fetchTitle(element) {
+ return fetch('https://api.linkpreview.net', {
+    method: 'POST',
+    mode: 'cors',
+    body: JSON.stringify({key: '5d77d2ac4d862f6bd2a3672ec73783ad8f4b3dd1d18f4', q: document.getElementById(element).value})
+  }).then(res => {return res.json()})
+}
+
+function uuidv4() {
+  return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+    (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+  )
+}
+
+function capitalize(s) {
+  if (typeof s !== 'string') return ''
+  return s.charAt(0).toUpperCase() + s.slice(1)
+}
+
 function mode() {
   let mode = {}
   mode.values = [];
@@ -54,17 +74,6 @@ function changeMode(list) {
   myTable.parentNode.removeChild(myTable);
   body.appendChild(newTable)
   createTable(listSelected);
-}
-
-function uuidv4() {
-  return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
-    (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
-  )
-}
-
-function capitalize(s) {
-  if (typeof s !== 'string') return ''
-  return s.charAt(0).toUpperCase() + s.slice(1)
 }
 
 function retrieveData(json, stringCategory = "") {
@@ -326,24 +335,55 @@ function clearInsert() {
 
 function newElement() {
   let mode = this.mode();
-  let item = {title:document.getElementById('Title').value,url:document.getElementById('Url').value,description:document.getElementById('Description').value,tutor:document.getElementById('Tutor').value,tutorUrl:document.getElementById('TutorUrl').value,category:document.getElementById('Category').value,type:this.onSelect('Type'),price:this.onSelect('Price'),status:this.onSelect('Status')};
-  let tr = newEntry(item);
-  if (document.getElementById("Title").value == '' || document.getElementById("Url").value == '' || document.getElementById("Category").value == '' || (document.getElementById("TutorUrl").value != '' && document.getElementById("Tutor").value == '') || Array.isArray(this.onSelect('Type')) || Array.isArray(this.onSelect('Price')) || Array.isArray(this.onSelect('Status'))) {
-    let errorMsg = "You have the following errors: "
-    let missingFields = [];
-    if (document.getElementById("Title").value == '') {missingFields.push("\nMissing Title field.")}
-    if (document.getElementById("Url").value == '') {missingFields.push("\nMising Title URL field.")}
-    if (document.getElementById("Category").value == '') {missingFields.push("\nMissing Category field.")}
-    if (document.getElementById("TutorUrl").value != '' && document.getElementById("Tutor").value == '') {missingFields.push("\nMissing Tutor field for Tutor Url.")}
-    if (Array.isArray(this.onSelect('Type'))) {missingFields.push("\nYou can select only one Type.")}
-    if (Array.isArray(this.onSelect('Price'))) {missingFields.push("\nYou can select only one Price.")}
-    if (Array.isArray(this.onSelect('Status'))) {missingFields.push("\nYou can select only one Status.")}
-    alert(errorMsg+missingFields.join(" "));
-  } else {
-    this.clearInsert();
-    document.getElementById("myTable").insertBefore(tr, document.getElementById("myTable").childNodes[1]);
-    console.log(tr)
-  }
+  let item = {
+    title:document.getElementById('Title').value,
+    url:document.getElementById('Url').value,
+    description:document.getElementById('Description').value,
+    tutor:document.getElementById('Tutor').value,
+    tutorUrl:document.getElementById('TutorUrl').value,
+    category:document.getElementById('Category').value,
+    type:this.onSelect('Type'),
+    price:this.onSelect('Price'),
+    status:this.onSelect('Status')
+  };
+  Promise.all([
+  fetchTitle('Url')
+  .then(urlPreview => {
+    if (item.title == "" && urlPreview.title && urlPreview.title != "") {
+      item.title = urlPreview.title;
+    }
+    if (mode.selected == 'library' && item.description == "" && urlPreview.description && urlPreview.description != "") {
+      item.description = urlPreview.description;
+    }
+  }),
+  fetchTitle('TutorUrl')
+    .then(tutorUrlPreview => {
+      console.log(tutorUrlPreview)
+      if (item.tutor == "" && tutorUrlPreview.title && tutorUrlPreview.title != "") {
+        console.log("fasf")
+        item.tutor = tutorUrlPreview.title;
+      }
+    })
+  ]).then(values => {
+    console.log(item)
+    let tr = newEntry(item);
+    if (item.title == '' || document.getElementById("Url").value == '' || document.getElementById("Category").value == '' || (document.getElementById("TutorUrl").value != '' && item.tutor == '') || Array.isArray(this.onSelect('Type')) || Array.isArray(this.onSelect('Price')) || Array.isArray(this.onSelect('Status'))) {
+      let errorMsg = "You have the following errors: "
+      let missingFields = [];
+      if (item.title == '') {missingFields.push("\nMissing Title field.")}
+      if (document.getElementById("Url").value == '') {missingFields.push("\nMising Title URL field.")}
+      if (document.getElementById("Category").value == '') {missingFields.push("\nMissing Category field.")}
+      if (document.getElementById("TutorUrl").value != '' && item.tutor == '') {missingFields.push("\nMissing Tutor field for Tutor Url.")}
+      if (Array.isArray(this.onSelect('Type'))) {missingFields.push("\nYou can select only one Type.")}
+      if (Array.isArray(this.onSelect('Price'))) {missingFields.push("\nYou can select only one Price.")}
+      if (Array.isArray(this.onSelect('Status'))) {missingFields.push("\nYou can select only one Status.")}
+      alert(errorMsg+missingFields.join(" "));
+    } else {
+      this.clearInsert();
+      document.getElementById("myTable").insertBefore(tr, document.getElementById("myTable").childNodes[1]);
+      console.log(tr)
+    }
+  });
 }
 
 function onSelect(id) {
@@ -373,6 +413,9 @@ xhttp.onreadystatechange = function() {
       let modeSelected = mode();
       if (element.title == capitalize(modeSelected.selected)) {
         listSelected = retrieveData(element.items);
+        // listSelected.addEventListener("change", function() {
+        //   console.log("list cambio")
+        // });
       }
     });
     createTable(listSelected);
