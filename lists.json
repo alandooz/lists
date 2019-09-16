@@ -3233,8 +3233,7 @@
           },
           {
             "title": "Linkedin Learning",
-            "url": "https://www.linkedin.com/learning/me",
-            "status": "🔵"
+            "url": "https://www.linkedin.com/learning/me"
           },
           {
             "title": "Pluralsight",
@@ -3243,53 +3242,43 @@
           },
           {
             "title": "Masterclass",
-            "url": "https://www.masterclass.com/",
-            "status": "🔵"
+            "url": "https://www.masterclass.com/"
           },
           {
             "title": "YouTube Creator Academy",
-            "url": "https://creatoracademy.youtube.com/",
-            "status": "🔵"
+            "url": "https://creatoracademy.youtube.com/"
           },
           {
             "title": "CreativeLive",
-            "url": "https://www.creativelive.com/onair",
-            "status": "🔵"
+            "url": "https://www.creativelive.com/onair"
           },
           {
             "title": "Crehana",
-            "url": "https://www.crehana.com/panel/#/mis-cursos",
-            "status": "🔵"
+            "url": "https://www.crehana.com/panel/#/mis-cursos"
           },
           {
             "title": "Edutin",
-            "url": "https://edutin.com/",
-            "status": "🔵"
+            "url": "https://edutin.com/"
           },
           {
             "title": "Exercism",
-            "url": "https://exercism.io/",
-            "status": "🔵"
+            "url": "https://exercism.io/"
           },
           {
             "title": "Mimo",
-            "url": "https://getmimo.com/",
-            "status": "🔵"
+            "url": "https://getmimo.com/"
           },
           {
             "title": "Udemy",
-            "url": "https://www.udemy.com/",
-            "status": "🔵"
+            "url": "https://www.udemy.com/"
           },
           {
             "title": "Wmedia",
-            "url": "https://sso.teachable.com/secure/teachable_accounts/profile",
-            "status": "🔵"
+            "url": "https://sso.teachable.com/secure/teachable_accounts/profile"
           },
           {
             "title": "Code with Mosh",
-            "url": "https://sso.teachable.com/secure/teachable_accounts/profile",
-            "status": "🔵"
+            "url": "https://sso.teachable.com/secure/teachable_accounts/profile"
           },
           {
             "title": "Freecodecamp",
@@ -3298,13 +3287,11 @@
           },
           {
             "title": "Coursera",
-            "url": "https://www.coursera.org/",
-            "status": "🔵"
+            "url": "https://www.coursera.org/"
           },
           {
             "title": "Solo Learn",
-            "url": "https://www.sololearn.com/",
-            "status": "🔵"
+            "url": "https://www.sololearn.com/"
           },
           {
             "title": "Edx",
@@ -3323,18 +3310,15 @@
           },
           {
             "title": "Punto Digital",
-            "url": "https://cursos-puntodigital.paisdigital.modernizacion.gob.ar/",
-            "status": "🔵"
+            "url": "https://cursos-puntodigital.paisdigital.modernizacion.gob.ar/"
           },
           {
             "title": "Academia BA Emprende Virtual",
-            "url": "https://www.buenosaires.gob.ar/innovacion/emprendedores/capacitacion-e-incubadoras/academia-ba-emprende/virtual",
-            "status": "🔵"
+            "url": "https://www.buenosaires.gob.ar/innovacion/emprendedores/capacitacion-e-incubadoras/academia-ba-emprende/virtual"
           },
           {
             "title": "Ted",
-            "url": "https://www.ted.com/",
-            "status": "🔵"
+            "url": "https://www.ted.com/"
           },
           {
             "title": "Learn Anything",
@@ -3495,8 +3479,7 @@
                     "items": [
                       {
                         "title": "CSS Grid — Learn all about CSS Grid with Wes Bos in this free video series!",
-                        "url": "https://cssgrid.io/",
-                        "status": "🔵"
+                        "url": "https://cssgrid.io/"
                       },
                       {
                         "title": "Learn CSS Grid for free | Scrimba.com",
