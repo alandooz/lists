@@ -46,7 +46,7 @@ function changeMode(list) {
   newTable.id = "myTable";
   newTable.appendChild(myTableHeader)
   // newTable.addEventListener('dblclick', function(ev) {
-  //   if (ev.target.tagName === 'TD' && ev.target.className != 'close') {
+  //   if (ev.target.tagName === 'TD' && ev.target.hasAttribute('close')) {
   //     ev.target.parentNode.classList.toggle('checked');
   //   }
   // }, false);
@@ -94,12 +94,13 @@ function retrieveData(json, stringCategory = "") {
 function newEntry(item) {
   let mode = this.mode();
   let tr = document.createElement("TR");
+  tr.id = item.id;
   let title = document.createElement("TD");
   title.setAttribute("title", "");
   let titlelink = document.createElement('a');
-  titlelink.appendChild(document.createTextNode(item.title || ""));
-  titlelink.title = item.title || "";
-  titlelink.href = item.url || "#";
+  titlelink.appendChild(document.createTextNode(item.title));
+  titlelink.title = item.title;
+  titlelink.href = item.url;
   title.appendChild(titlelink);
   tr.appendChild(title);
   if (mode.selected == "library") {
@@ -109,15 +110,17 @@ function newEntry(item) {
       description.innerHTML = `<span>`+item.description+`</span>`;
     }
     tr.appendChild(description);
-  } else {
+  } else if (mode.selected == "education") {
     let tutor = document.createElement("TD");
     tutor.setAttribute("tutor", "");
-    if (item.tutor) {
+    if (item.tutor && item.tutorUrl) {
       let tutorlink = document.createElement('a');
       tutorlink.appendChild(document.createTextNode(item.tutor || ""));
       tutorlink.title = item.tutor || "";
       tutorlink.href = item.tutorUrl || "#";
       tutor.appendChild(tutorlink);
+    } else if (item.tutor && !item.tutorUrl) {
+      tutor.innerHTML = `<span>`+item.tutor+`</span>`;
     }
     tr.appendChild(tutor);
   }
@@ -179,11 +182,10 @@ function newEntry(item) {
   }
   let close = document.createElement("TD");
   close.setAttribute("close", "");
-  close.className = "close";
   close.innerHTML = `<i class="fas fa-times-circle"></i>`
   close.onclick = function() {
-    let div = this.parentElement;
-    div.style.display = "none";
+    listSelected.splice(listSelected.indexOf(item),1)
+    document.getElementById(item.id).parentNode.removeChild(document.getElementById(item.id));
   }
   tr.appendChild(close);
   return tr
@@ -335,53 +337,76 @@ function clearInsert() {
 
 function newElement() {
   let mode = this.mode();
-  let item = {
-    title:document.getElementById('Title').value,
-    url:document.getElementById('Url').value,
-    description:document.getElementById('Description').value,
-    tutor:document.getElementById('Tutor').value,
-    tutorUrl:document.getElementById('TutorUrl').value,
-    category:document.getElementById('Category').value,
-    type:this.onSelect('Type'),
-    price:this.onSelect('Price'),
-    status:this.onSelect('Status')
-  };
-  Promise.all([
-  fetchTitle('Url')
-  .then(urlPreview => {
-    if (item.title == "" && urlPreview.title && urlPreview.title != "") {
-      item.title = urlPreview.title;
-    }
-    if (mode.selected == 'library' && item.description == "" && urlPreview.description && urlPreview.description != "") {
-      item.description = urlPreview.description;
-    }
-  }),
-  fetchTitle('TutorUrl')
+  let item = {};
+
+  item.id = uuidv4();
+  if (document.getElementById('Title').value) {
+    item.title = document.getElementById('Title').value;
+  }
+  if (document.getElementById('Url').value) {
+    item.url = document.getElementById('Url').value;
+  }
+  if (mode.selected == 'library' && document.getElementById('Description').value) {
+    item.description = document.getElementById('Description').value;
+  }
+  if (mode.selected == 'education' && document.getElementById('Tutor').value) {
+    item.tutor = document.getElementById('Tutor').value;
+  }
+  if (mode.selected == 'education' && document.getElementById('TutorUrl').value) {
+    item.tutorUrl = document.getElementById('TutorUrl').value;
+  }
+  if (document.getElementById('Category').value) {
+    item.category = document.getElementById('Category').value;
+  }
+  if (mode.selected == 'education' && this.onSelect('Type')) {
+    item.type = this.onSelect('Type');
+  }
+  if (mode.selected == 'education' && this.onSelect('Price')) {
+    item.price = this.onSelect('Price');
+  }
+  if (mode.selected == 'education' && this.onSelect('Status')) {
+    item.status = this.onSelect('Status');
+  }
+
+  let fetchItems = []
+
+  if (item.url && (!item.title || !item.description)) {
+    fetchItems.push(fetchTitle('Url')
+    .then(urlPreview => {
+      if (!item.title && urlPreview.title) {
+        item.title = urlPreview.title;
+      }
+      if (mode.selected == 'library' && !item.description && urlPreview.description) {
+        item.description = urlPreview.description;
+      }
+    }))
+  }
+  if (item.tutorUrl && !item.tutor) {
+    fetchItems.push(fetchTitle('TutorUrl')
     .then(tutorUrlPreview => {
-      console.log(tutorUrlPreview)
-      if (item.tutor == "" && tutorUrlPreview.title && tutorUrlPreview.title != "") {
-        console.log("fasf")
+      if (tutorUrlPreview.title) {
         item.tutor = tutorUrlPreview.title;
       }
-    })
-  ]).then(values => {
-    console.log(item)
+    }))
+  }
+
+  Promise.all(fetchItems).then(values => {
     let tr = newEntry(item);
-    if (item.title == '' || document.getElementById("Url").value == '' || document.getElementById("Category").value == '' || (document.getElementById("TutorUrl").value != '' && item.tutor == '') || Array.isArray(this.onSelect('Type')) || Array.isArray(this.onSelect('Price')) || Array.isArray(this.onSelect('Status'))) {
+    if (!item.title || !item.url || !item.category || (item.tutorUrl && !item.tutor) || Array.isArray(this.onSelect('Type')) || Array.isArray(this.onSelect('Price')) || Array.isArray(this.onSelect('Status'))) {
       let errorMsg = "You have the following errors: "
       let missingFields = [];
-      if (item.title == '') {missingFields.push("\nMissing Title field.")}
-      if (document.getElementById("Url").value == '') {missingFields.push("\nMising Title URL field.")}
-      if (document.getElementById("Category").value == '') {missingFields.push("\nMissing Category field.")}
-      if (document.getElementById("TutorUrl").value != '' && item.tutor == '') {missingFields.push("\nMissing Tutor field for Tutor Url.")}
+      if (!item.title) {missingFields.push("\nMissing Title field.")}
+      if (!item.url) {missingFields.push("\nMising Title URL field.")}
+      if (!item.category) {missingFields.push("\nMissing Category field.")}
+      if (item.tutorUrl && !item.tutor) {missingFields.push("\nMissing Tutor field for Tutor Url.")}
       if (Array.isArray(this.onSelect('Type'))) {missingFields.push("\nYou can select only one Type.")}
       if (Array.isArray(this.onSelect('Price'))) {missingFields.push("\nYou can select only one Price.")}
       if (Array.isArray(this.onSelect('Status'))) {missingFields.push("\nYou can select only one Status.")}
       alert(errorMsg+missingFields.join(" "));
     } else {
       this.clearInsert();
+      listSelected.unshift(item)
       document.getElementById("myTable").insertBefore(tr, document.getElementById("myTable").childNodes[1]);
-      console.log(tr)
     }
   });
 }
@@ -409,13 +434,11 @@ const xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     window.list = JSON.parse(xhttp.responseText);
+    // console.log(JSON.stringify(retrieveData(JSON.parse(xhttp.responseText))))
     window.list.forEach(element => {
       let modeSelected = mode();
       if (element.title == capitalize(modeSelected.selected)) {
         listSelected = retrieveData(element.items);
-        // listSelected.addEventListener("change", function() {
-        //   console.log("list cambio")
-        // });
       }
     });
     createTable(listSelected);
