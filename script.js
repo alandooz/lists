@@ -1,21 +1,7 @@
-
-function fetchTitle(element) {
- return fetch('https://api.linkpreview.net', {
-    method: 'POST',
-    mode: 'cors',
-    body: JSON.stringify({key: '5d77d2ac4d862f6bd2a3672ec73783ad8f4b3dd1d18f4', q: document.getElementById(element).value})
-  }).then(res => {return res.json()})
-}
-
 function uuidv4() {
   return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
     (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
   )
-}
-
-function capitalize(s) {
-  if (typeof s !== 'string') return ''
-  return s.charAt(0).toUpperCase() + s.slice(1)
 }
 
 function mode() {
@@ -32,8 +18,10 @@ function mode() {
       mode.notSelected = mode.values[1];
     }
   }
-  mode.education = document.querySelectorAll('[education]');
-  mode.library = document.querySelectorAll('[library]');
+  mode.education = document.querySelectorAll('input[education]');
+  mode.library = document.querySelectorAll('input[library]');
+  mode.educationAll = document.querySelectorAll('tr[education]');
+  mode.libraryAll = document.querySelectorAll('tr[library]');
   return mode;
 }
 
@@ -66,35 +54,21 @@ function changeMode(list) {
   mode[mode.notSelected].forEach(element => {
     element.style.display = "none";
   });
-  this.list.forEach(element => {
-    if (element.title == capitalize(mode.selected)) {
-      listSelected = retrieveData(element.items);
-    }
+  mode.library.forEach(element => {
+    element.style.display = "none";
   });
+  console.log( mode['library'])
   myTable.parentNode.removeChild(myTable);
   body.appendChild(newTable)
-  createTable(listSelected);
-}
-
-function retrieveData(json, stringCategory = "") {
-  let tempArray = [];
-  for (let j = 0; j < json.length; j++) {
-    if (json[j].items) {
-      let tempFolderArray = retrieveData(json[j].items, stringCategory+">"+json[j].title);
-      tempArray.push(...tempFolderArray);
-    } else if (!json[j].items) {
-      json[j].id = uuidv4();
-      json[j].category = stringCategory.substring(1);
-      tempArray.push(json[j])
-    }
-  }
-  return tempArray;
+  createTable(list);
+  // console.log(newTable.querySelectorAll('tr[id]'))
 }
 
 function newEntry(item) {
   let mode = this.mode();
   let tr = document.createElement("TR");
   tr.id = item.id;
+  tr.setAttribute(item.category.split('>')[0], '');
   let title = document.createElement("TD");
   title.setAttribute("title", "");
   let titlelink = document.createElement('a');
@@ -184,11 +158,108 @@ function newEntry(item) {
   close.setAttribute("close", "");
   close.innerHTML = `<i class="fas fa-times-circle"></i>`
   close.onclick = function() {
-    listSelected.splice(listSelected.indexOf(item),1)
+    list.splice(list.indexOf(item),1)
     document.getElementById(item.id).parentNode.removeChild(document.getElementById(item.id));
   }
   tr.appendChild(close);
   return tr
+}
+
+function newElement() {
+  let mode = this.mode();
+  let item = {};
+
+  item.id = uuidv4();
+  if (document.getElementById('Title').value) {
+    item.title = document.getElementById('Title').value;
+  }
+  if (document.getElementById('Url').value) {
+    item.url = document.getElementById('Url').value;
+  }
+  if (mode.selected == 'library' && document.getElementById('Description').value) {
+    item.description = document.getElementById('Description').value;
+  }
+  if (mode.selected == 'education' && document.getElementById('Tutor').value) {
+    item.tutor = document.getElementById('Tutor').value;
+  }
+  if (mode.selected == 'education' && document.getElementById('TutorUrl').value) {
+    item.tutorUrl = document.getElementById('TutorUrl').value;
+  }
+  if (document.getElementById('Category').value) {
+    item.category = document.getElementById('Category').value;
+  }
+  if (mode.selected == 'education' && this.onSelect('Type')) {
+    item.type = this.onSelect('Type');
+  }
+  if (mode.selected == 'education' && this.onSelect('Price')) {
+    item.price = this.onSelect('Price');
+  }
+  if (mode.selected == 'education' && this.onSelect('Status')) {
+    item.status = this.onSelect('Status');
+  }
+
+  let fetchItems = []
+
+  if (item.url && (!item.title || !item.description)) {
+    fetchItems.push(fetchTitle('Url')
+    .then(urlPreview => {
+      if (!item.title && urlPreview.title) {
+        item.title = urlPreview.title;
+      }
+      if (mode.selected == 'library' && !item.description && urlPreview.description) {
+        item.description = urlPreview.description;
+      }
+    }))
+  }
+  if (item.tutorUrl && !item.tutor) {
+    fetchItems.push(fetchTitle('TutorUrl')
+    .then(tutorUrlPreview => {
+      if (tutorUrlPreview.title) {
+        item.tutor = tutorUrlPreview.title;
+      }
+    }))
+  }
+
+  Promise.all(fetchItems).then(values => {
+    let tr = newEntry(item);
+    if (!item.title || !item.url || !item.category || (item.tutorUrl && !item.tutor) || Array.isArray(this.onSelect('Type')) || Array.isArray(this.onSelect('Price')) || Array.isArray(this.onSelect('Status'))) {
+      let errorMsg = "You have the following errors: "
+      let missingFields = [];
+      if (!item.title) {missingFields.push("\nMissing Title field.")}
+      if (!item.url) {missingFields.push("\nMising Title URL field.")}
+      if (!item.category) {missingFields.push("\nMissing Category field.")}
+      if (item.tutorUrl && !item.tutor) {missingFields.push("\nMissing Tutor field for Tutor Url.")}
+      if (Array.isArray(this.onSelect('Type'))) {missingFields.push("\nYou can select only one Type.")}
+      if (Array.isArray(this.onSelect('Price'))) {missingFields.push("\nYou can select only one Price.")}
+      if (Array.isArray(this.onSelect('Status'))) {missingFields.push("\nYou can select only one Status.")}
+      alert(errorMsg+missingFields.join(" "));
+    } else {
+      this.clearInsert();
+      list.unshift(item)
+      document.getElementById("myTable").insertBefore(tr, document.getElementById("myTable").childNodes[1]);
+    }
+  });
+}
+
+function clearInsert() {
+  document.getElementById("Title").value = "";
+  document.getElementById("Url").value = "";
+  document.getElementById("Description").value = "";
+  document.getElementById("Tutor").value = "";
+  document.getElementById("TutorUrl").value = "";
+  document.getElementById("Category").value = "";
+  let allType = document.getElementsByName('type');
+  for(var i = 0; i < allType.length; i++) {
+    allType[i].checked = false;
+  }
+  let allPrice = document.getElementsByName('price');
+  for(var i = 0; i < allPrice.length; i++) {
+    allPrice[i].checked = false;
+  }
+  let allStatus = document.getElementsByName('status');
+  for(var i = 0; i < allStatus.length; i++) {
+    allStatus[i].checked = false;
+  }
 }
 
 function createTable(lists) {
@@ -314,101 +385,15 @@ function filtering() {
   }
 }
 
-function clearInsert() {
-  document.getElementById("Title").value = "";
-  document.getElementById("Url").value = "";
-  document.getElementById("Description").value = "";
-  document.getElementById("Tutor").value = "";
-  document.getElementById("TutorUrl").value = "";
-  document.getElementById("Category").value = "";
-  let allType = document.getElementsByName('type');
-  for(var i = 0; i < allType.length; i++) {
-    allType[i].checked = false;
-  }
-  let allPrice = document.getElementsByName('price');
-  for(var i = 0; i < allPrice.length; i++) {
-    allPrice[i].checked = false;
-  }
-  let allStatus = document.getElementsByName('status');
-  for(var i = 0; i < allStatus.length; i++) {
-    allStatus[i].checked = false;
-  }
-}
-
-function newElement() {
-  let mode = this.mode();
-  let item = {};
-
-  item.id = uuidv4();
-  if (document.getElementById('Title').value) {
-    item.title = document.getElementById('Title').value;
-  }
-  if (document.getElementById('Url').value) {
-    item.url = document.getElementById('Url').value;
-  }
-  if (mode.selected == 'library' && document.getElementById('Description').value) {
-    item.description = document.getElementById('Description').value;
-  }
-  if (mode.selected == 'education' && document.getElementById('Tutor').value) {
-    item.tutor = document.getElementById('Tutor').value;
-  }
-  if (mode.selected == 'education' && document.getElementById('TutorUrl').value) {
-    item.tutorUrl = document.getElementById('TutorUrl').value;
-  }
-  if (document.getElementById('Category').value) {
-    item.category = document.getElementById('Category').value;
-  }
-  if (mode.selected == 'education' && this.onSelect('Type')) {
-    item.type = this.onSelect('Type');
-  }
-  if (mode.selected == 'education' && this.onSelect('Price')) {
-    item.price = this.onSelect('Price');
-  }
-  if (mode.selected == 'education' && this.onSelect('Status')) {
-    item.status = this.onSelect('Status');
-  }
-
-  let fetchItems = []
-
-  if (item.url && (!item.title || !item.description)) {
-    fetchItems.push(fetchTitle('Url')
-    .then(urlPreview => {
-      if (!item.title && urlPreview.title) {
-        item.title = urlPreview.title;
-      }
-      if (mode.selected == 'library' && !item.description && urlPreview.description) {
-        item.description = urlPreview.description;
-      }
-    }))
-  }
-  if (item.tutorUrl && !item.tutor) {
-    fetchItems.push(fetchTitle('TutorUrl')
-    .then(tutorUrlPreview => {
-      if (tutorUrlPreview.title) {
-        item.tutor = tutorUrlPreview.title;
-      }
-    }))
-  }
-
-  Promise.all(fetchItems).then(values => {
-    let tr = newEntry(item);
-    if (!item.title || !item.url || !item.category || (item.tutorUrl && !item.tutor) || Array.isArray(this.onSelect('Type')) || Array.isArray(this.onSelect('Price')) || Array.isArray(this.onSelect('Status'))) {
-      let errorMsg = "You have the following errors: "
-      let missingFields = [];
-      if (!item.title) {missingFields.push("\nMissing Title field.")}
-      if (!item.url) {missingFields.push("\nMising Title URL field.")}
-      if (!item.category) {missingFields.push("\nMissing Category field.")}
-      if (item.tutorUrl && !item.tutor) {missingFields.push("\nMissing Tutor field for Tutor Url.")}
-      if (Array.isArray(this.onSelect('Type'))) {missingFields.push("\nYou can select only one Type.")}
-      if (Array.isArray(this.onSelect('Price'))) {missingFields.push("\nYou can select only one Price.")}
-      if (Array.isArray(this.onSelect('Status'))) {missingFields.push("\nYou can select only one Status.")}
-      alert(errorMsg+missingFields.join(" "));
-    } else {
-      this.clearInsert();
-      listSelected.unshift(item)
-      document.getElementById("myTable").insertBefore(tr, document.getElementById("myTable").childNodes[1]);
-    }
-  });
+function fetchTitle(element) {
+  return fetch('https://api.linkpreview.net', {
+     method: 'POST',
+     mode: 'cors',
+     body: JSON.stringify({key: '5d77d2ac4d862f6bd2a3672ec73783ad8f4b3dd1d18f4', q: document.getElementById(element).value})
+   })
+   .then(res => {
+    return res.json()
+  })
 }
 
 function onSelect(id) {
@@ -428,21 +413,14 @@ function onSelect(id) {
   }
 }
 
-let listSelected;
-
 const xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     window.list = JSON.parse(xhttp.responseText);
     // console.log(JSON.stringify(retrieveData(JSON.parse(xhttp.responseText))))
-    window.list.forEach(element => {
-      let modeSelected = mode();
-      if (element.title == capitalize(modeSelected.selected)) {
-        listSelected = retrieveData(element.items);
-      }
-    });
-    createTable(listSelected);
-    changeMode(listSelected);
+    let modeSelected = mode();
+    // createTable(list);
+    changeMode(list);
   }
 };
 xhttp.open("GET", "lists.json");
