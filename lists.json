@@ -2805,6 +2805,15 @@
               {
                 "title": "Kali Yuga - Wikipedia",
                 "url": "https://en.wikipedia.org/wiki/Kali_Yuga"
+              },
+              {
+                "title": "IAEU | Instituto de Altos Estudios Universitarios en Abierto",
+                "url": "https://www.iaeu.net/",
+                "status": "🔵"
+              },
+              {
+                "title": "IAEU | Instituto de Altos Estudios Universitarios en Abierto | ProfessorShip",
+                "url": "https://www.ps.iaeu.net/"
               }
             ]
           },
@@ -4609,6 +4618,10 @@
               {
                 "title": "Google Tech Dev Guide",
                 "url": "https://techdevguide.withgoogle.com/"
+              },
+              {
+                "title": "Spark AR by Facebook",
+                "url": "https://sparkar.facebook.com/ar-studio/learn/documentation/guides"
               }
             ]
           },
